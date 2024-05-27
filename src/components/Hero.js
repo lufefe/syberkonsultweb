@@ -14,8 +14,6 @@ const Hero = () => {
   return (
     <Section
       className="pt-[12rem] -mt-[5.25]"
-      crosses
-      crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
       id="hero"
     >
@@ -40,9 +38,6 @@ const Hero = () => {
             overall security of our clients’ infrastructure, ensuring compliance
             and good governance.
           </p>
-          <Button href="/pricing" white>
-            Get Started
-          </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">

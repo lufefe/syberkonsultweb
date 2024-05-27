@@ -1,3 +1,5 @@
+import syberkonsult from "./syberkonsult.svg"; //part of rebranding
+import syberkonsult_transp from "./syberkonsult_transp.png"; //part of rebranding
 import brainwave from "./brainwave.svg";
 import check from "./check.svg";
 import brainwaveSymbol from "./brainwave-symbol.svg";
@@ -76,6 +78,8 @@ import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
 export {
+  syberkonsult,
+  syberkonsult_transp,
   brainwave,
   check,
   check2,

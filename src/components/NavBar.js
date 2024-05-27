@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { useState } from "react";
-import { brainwave } from "../assets";
+import { brainwave, syberkonsult_transp } from "../assets"; //todo format/resize image (at canva) to fit, use brainwave logo as reference
 import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
@@ -52,7 +52,7 @@ const Header = () => {
                 key={item.id}
                 href={item.url}
                 onClick={handleClick}
-                className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
+                className={`block relative font-grotesk text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
                   item.onlyMobile ? "lg:hidden" : ""
                 }
                     px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold
@@ -69,16 +69,6 @@ const Header = () => {
           </div>
           <HamburgerMenu />
         </nav>
-
-        <a
-          href="#signup"
-          className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
-        >
-          Get Started
-        </a>
-        <Button className="hidden lg:flex" href="#login">
-          Action
-        </Button>
 
         <Button
           className="ml-auto lg:hidden"

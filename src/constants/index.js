@@ -39,36 +39,31 @@ import {
 export const navigation = [
   {
     id: "0",
-    title: "Features",
-    url: "#features",
+    title: "Services",
+    url: "#services",
   },
   {
     id: "1",
-    title: "Pricing",
-    url: "#pricing",
+    title: "About",
+    url: "#about",
   },
-  {
+{
     id: "2",
-    title: "How to use",
-    url: "#how-to-use",
+    title: "Our Work",
+    url: "#ourwork",
   },
   {
     id: "3",
-    title: "Roadmap",
-    url: "#roadmap",
+    title: "Contact Us",
+    url: "#contact-us",
   },
-  {
-    id: "4",
-    title: "New account",
-    url: "#signup",
-    onlyMobile: true,
-  },
-  {
-    id: "5",
-    title: "Sign in",
-    url: "#login",
-    onlyMobile: true,
-  },
+  
+  // {
+  //   id: "4",
+  //   title: "New account",
+  //   url: "#signup",
+  //   onlyMobile: true,
+  // },
 ];
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
@@ -241,7 +236,7 @@ export const pricing = [
   },
 ];
 
-export const benefits = [
+export const services = [
   {
     id: "0",
     title: "Data and Risk Management",
@@ -278,7 +273,7 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Managed Seervices",
+    title: "Managed Services",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
     backgroundUrl: "assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
@@ -323,6 +318,29 @@ export const socials = [
     id: "4",
     title: "Facebook",
     iconUrl: facebook,
+    url: "#",
+  },
+];
+
+export const footerlinks = [
+  {
+    id: "0",
+    title: "Privacy Policy",
+    url: "#",
+  },
+  {
+    id: "1",
+    title: "Terms of Service",
+    url: "#",
+  },
+  {
+    id: "2",
+    title: "Careers",
+    url: "#",
+  },
+  {
+    id: "3",
+    title: "Blog",
     url: "#",
   },
 ];
