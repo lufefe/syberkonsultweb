@@ -70,6 +70,10 @@ const Header = () => {
           <HamburgerMenu />
         </nav>
 
+        <Button className="hidden lg:flex" href="#">
+         Our Story
+        </Button>
+
         <Button
           className="ml-auto lg:hidden"
           px="px-3"

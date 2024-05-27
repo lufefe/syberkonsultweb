@@ -1,39 +1,38 @@
 import {
-  benefitIcon1,
-  benefitIcon2,
-  benefitIcon3,
-  benefitIcon4,
-  benefitImage2,
+  iconPass,
+  iconShield,
+  iconKey,
+  iconFirewall,
+  datariskIcon,
+  secAssessIcon,
+  secDesignIcon,
+  solImpleIcon,
+  auditIcon,
+  manServIcon,
+  execMember,
   chromecast,
   disc02,
-  discord,
   discordBlack,
   facebook,
-  figma,
-  file02,
-  framer,
-  homeSmile,
   instagram,
   notification2,
   notification3,
   notification4,
-  notion,
-  photoshop,
-  plusSquare,
-  protopie,
-  raindrop,
   recording01,
   recording03,
   roadmap1,
   roadmap2,
   roadmap3,
   roadmap4,
-  searchMd,
-  slack,
   sliders04,
   telegram,
   twitter,
-  yourlogo,
+  isoLogo,
+  teslaLogo,
+  microsoftLogo,
+  depTourismLogo,
+  accentureLogo,
+  robot6,
 } from "../../src/assets";
 
 export const navigation = [
@@ -66,17 +65,11 @@ export const navigation = [
   // },
 ];
 
-export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
+export const heroIcons = [iconFirewall, iconKey, iconPass, iconShield];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
-
-export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
-];
+export const companyLogos = [depTourismLogo, accentureLogo, microsoftLogo, isoLogo, teslaLogo];
 
 export const brainwaveServicesIcons = [
   recording03,
@@ -86,10 +79,10 @@ export const brainwaveServicesIcons = [
   sliders04,
 ];
 
-export const roadmap = [
+export const ourwork = [
   {
     id: "0",
-    title: "Voice recognition",
+    title: "Generative AI Risk Management",
     text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
     date: "May 2023",
     status: "done",
@@ -98,7 +91,7 @@ export const roadmap = [
   },
   {
     id: "1",
-    title: "Gamification",
+    title: "Gamification of Cyber Awareness and Training",
     text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
     date: "May 2023",
     status: "progress",
@@ -106,7 +99,7 @@ export const roadmap = [
   },
   {
     id: "2",
-    title: "Chatbot customization",
+    title: "Cybersecurity Chatbot",
     text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
     date: "May 2023",
     status: "done",
@@ -122,82 +115,65 @@ export const roadmap = [
   },
 ];
 
-export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+export const aboutText =
+  "SyberKonsult was founded to fulfill the need of state-of-the-art cybersecurity solutions in response to the rapid emergence of new technologies across industries. We operate as a propriety limited company with a R&D partnership with Invidum Technologies for cybersecurity products. Our team consists of IT Risk specialists and IT Security experts who deliver the best risk management and security implementations, respectively. ";
 
-export const collabContent = [
+export const aboutContent = [
   {
     id: "0",
-    title: "Seamless Integration",
-    text: collabText,
+    title: "Build a customer-centric culture.",
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Employ the best people",
   },
   {
     id: "2",
-    title: "Top-notch Security",
-  },
-];
-
-export const collabApps = [
-  {
-    id: "0",
-    title: "Figma",
-    icon: figma,
-    width: 26,
-    height: 36,
-  },
-  {
-    id: "1",
-    title: "Notion",
-    icon: notion,
-    width: 34,
-    height: 36,
-  },
-  {
-    id: "2",
-    title: "Discord",
-    icon: discord,
-    width: 36,
-    height: 28,
+    title: "Create distinguishable market value.",
   },
   {
     id: "3",
-    title: "Slack",
-    icon: slack,
-    width: 34,
-    height: 35,
+    title: "Address cyber threats as they emerge.",
+  },
+];
+
+export const teamPics = [
+  {
+    id: "0",
+    title: "CEO",
+    icon: execMember,
+    width: 'auto',
+    height: 'auto',
   },
   {
-    id: "4",
-    title: "Photoshop",
-    icon: photoshop,
-    width: 34,
-    height: 34,
+    id: "1",
+    title: "CTO",
+    icon: execMember,
+    width: 'auto',
+    height: 'auto',
   },
   {
-    id: "5",
-    title: "Protopie",
-    icon: protopie,
-    width: 34,
-    height: 34,
+    id: "2",
+    title: "CFO",
+    icon: execMember,
+    width: 'auto',
+    height: 'auto',
   },
   {
-    id: "6",
-    title: "Framer",
-    icon: framer,
-    width: 26,
-    height: 34,
+    id: "3",
+    title: "Legal",
+    icon: execMember,
+    width: 'auto',
+    height: 'auto',
   },
-  {
-    id: "7",
-    title: "Raindrop",
-    icon: raindrop,
-    width: 38,
-    height: 32,
-  },
+  // {
+  //   id: "4",
+  //   title: "HR",
+  //   icon: photoshop,
+  //   width: 34,
+  //   height: 34,
+  // },
+
 ];
 
 export const pricing = [
@@ -240,52 +216,46 @@ export const services = [
   {
     id: "0",
     title: "Data and Risk Management",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "assets/benefits/card-1.svg",
-    iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
+    text: "SyberKonsult specialises in helping organizations embrace sound data risk management practices to help keep their data safe and that access to it is carefully controlled and auditable. ",
+    iconUrl: datariskIcon,
+    imageUrl: robot6,
   },
   {
     id: "1",
     title: "Security Assessments",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-    backgroundUrl: "assets/benefits/card-2.svg",
-    iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
+    text: "The testing or evaluation of security controls to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting the security requirements.",
+    iconUrl: secAssessIcon,
+    imageUrl: robot6,
     light: true,
   },
   {
     id: "2",
-    title: "Security Architecture Design",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
-    backgroundUrl: "assets/benefits/card-3.svg",
-    iconUrl: benefitIcon3,
-    imageUrl: benefitImage2,
+    title: "Architecture Design",
+    text: "Strategic design of systems, policies and technologies to protect IT and business assets from cyberthreats. A well-designed security architecture aligns cybersecurity with the unique business goals and risk management profile of the organization.",
+    iconUrl: secDesignIcon,
+    imageUrl: robot6,
   },
   {
     id: "3",
     title: "Solutions Implementations",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "assets/benefits/card-4.svg",
-    iconUrl: benefitIcon4,
-    imageUrl: benefitImage2,
+    text: "Choosing the most effective and suitable security solutions to strengthen the security of a network. Implementing security products and optimizing the configuration to work properly requires a sophisticated level of security expertise",
+    iconUrl: solImpleIcon,
+    imageUrl: robot6,
     light: true,
   },
   {
     id: "4",
     title: "Managed Services",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "assets/benefits/card-5.svg",
-    iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
+    text: "The practice of outsourcing the responsibility for maintaining, and anticipating need for, a range of processes and functions, ostensibly for the purpose of improved operations and reduced budgetary expenditures through the reduction of directly-employed staff.",
+    iconUrl: manServIcon,
+    imageUrl: robot6,
   },
   {
     id: "5",
     title: "Audit and Review",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-    backgroundUrl: "assets/benefits/card-6.svg",
-    iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
+    text: "To assist clients by providing independent risk- and compliance-based audit assessments of their compliance with security objectives, policies, standards and processes such as Security Policy Framework, Cyber Security Strategy, Maturity Models, and relevant regulations",
+    iconUrl: auditIcon,
+    imageUrl: robot6,
   },
 ];
 

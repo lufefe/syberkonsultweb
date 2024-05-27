@@ -1,7 +1,7 @@
 import Section from "./Section";
 import Heading from "./Heading";
-import { service1, service2, service3, check } from "../assets";
-import { brainwaveServices, brainwaveServicesIcons } from "../constants";
+import { service2, service3 } from "../assets";
+import { brainwaveServicesIcons } from "../constants";
 import {
   PhotoChatMessage,
   Gradient,
@@ -17,7 +17,7 @@ const Services = () => {
       <div className="container">
         <Heading
           title="Get In Touch"
-          text="Brainwave unlocks the potential of AI-powered applications"
+          text="Let us help you achieve your desired security posture"
         />
 
         <div className="relative">
@@ -28,7 +28,7 @@ const Services = () => {
                 width={800}
                 alt="Smartest AI"
                 height={730}
-                src={service1}
+                src={''}
               />
             </div>
 
@@ -37,17 +37,7 @@ const Services = () => {
               <p className="body-2 mb-[3rem] text-n-3">
                 Brainwave unlocks the potential of AI-powered applications
               </p>
-              <ul className="body-2">
-                {brainwaveServices.map((item, index) => (
-                  <li
-                    key={index}
-                    className="flex items-start py-4 border-t border-n-6"
-                  >
-                    <img width={24} height={24} src={check} />
-                    <p className="ml-4">{item}</p>
-                  </li>
-                ))}
-              </ul>
+
             </div>
 
             <Generating className="absolute left-4 right-4 bottom-4 border-n-1/10 border lg:left-1/2 lg-right-auto lg:bottom-8 lg:-translate-x-1/2" />
@@ -57,7 +47,7 @@ const Services = () => {
             <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden">
               <div className="absolute inset-0">
                 <img
-                  src={service2}
+                  src={''}
                   className="h-full w-full object-cover"
                   width={630}
                   height={750}
@@ -110,7 +100,7 @@ const Services = () => {
 
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
                 <img
-                  src={service3}
+                  src={''}
                   className="w-full h-full object-cover"
                   width={520}
                   height={400}

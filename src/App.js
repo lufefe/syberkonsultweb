@@ -4,7 +4,7 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
-import Pricing from "./components/Pricing";
+// import Pricing from "./components/Pricing";
 import OurWork from "./components/OurWork";
 import ContactUs from "./components/ContactUs";
 
@@ -16,7 +16,7 @@ const App = () => {
         <Hero/>
         <Services/>
         <About/>
-        <Pricing/> {/* //todo decide on what to repurose with */ }
+        {/* <Pricing/> {/* //todo decide on what to repurose with */ } */}
         <OurWork/>
         <ContactUs/>
         <Footer/>
