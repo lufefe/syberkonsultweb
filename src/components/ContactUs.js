@@ -1,6 +1,6 @@
 import Section from "./Section";
 import Heading from "./Heading";
-import { service2, service3 } from "../assets";
+import { robot1, robot4, service2, service3 } from "../assets";
 import { brainwaveServicesIcons } from "../constants";
 import {
   PhotoChatMessage,
@@ -22,32 +22,112 @@ const Services = () => {
 
         <div className="relative">
           <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
-            <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-3/5 xl:w-auto">
-              <img
-                className="w-full h-full object-cover md:object-right"
-                width={800}
-                alt="Smartest AI"
-                height={730}
-                src={''}
-              />
+            <div className="relative z-1 w-full ml-auto">
+              {/* CONTACT FORM */}
+              <form class="p-15">
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                    <label
+                      class="block uppercase tracking-wide text-n-2 text-xs font-bold mb-2"
+                      for="grid-first-name"
+                    >
+                      First Name
+                    </label>
+                    <input
+                      class="appearance-none block w-full bg-gray-200/5 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                      id="grid-first-name"
+                      type="text"
+                      placeholder="Jane"
+                    />
+                    <p class=" hidden text-red-500 text-xs italic">
+                      Please fill out this field.
+                    </p>
+                  </div>
+                  <div class="w-full md:w-1/2 px-3">
+                    <label
+                      class="block uppercase tracking-wide text-n-2 text-xs font-bold mb-2"
+                      for="grid-last-name"
+                    >
+                      Last Name
+                    </label>
+                    <input
+                      class="appearance-none block w-full bg-gray-200/5 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      id="grid-last-name"
+                      type="text"
+                      placeholder="Doe"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                    <label
+                      class="block uppercase tracking-wide text-n-2 text-xs font-bold mb-2"
+                      for="grid-password"
+                    >
+                      Email Address
+                    </label>
+                    <input
+                      class="appearance-none block w-full bg-gray-200/5 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      id="grid-email"
+                      type="email"
+                      placeholder="********@*****.**"
+                    />
+                  </div>
+                  <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                    <label
+                      class="block uppercase tracking-wide text-n-2 text-xs font-bold mb-2"
+                      for="grid-password"
+                    >
+                      Website
+                    </label>
+                    <input
+                      class="appearance-none block w-full bg-gray-200/5 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      id="grid-email"
+                      type="text"
+                      placeholder="www.website.com"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  <div class="w-full px-3">
+                    <label
+                      class="block uppercase tracking-wide text-n-2 text-xs font-bold mb-2"
+                      for="grid-password"
+                    >
+                      Your Message
+                    </label>
+                    <textarea
+                      rows="10"
+                      class="appearance-none block w-full bg-gray-200/5 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    ></textarea>
+                  </div>
+                  <div class="flex justify-between w-full px-3">
+                    <div class="md:flex md:items-center">
+                      <label class="block text-n-2 font-bold">
+                        <input class="mr-2 leading-tight" type="checkbox" />
+                        <span class="text-sm">Send me your newsletter!</span>
+                      </label>
+                    </div>
+                    <button
+                      class="shadow bg-indigo-600 hover:bg-indigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
+                      type="submit"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
 
-            <div className="relative z-1 max-w-[17rem] ml-auto">
-              <h4 className="h4 mb-4">Smartest AI</h4>
-              <p className="body-2 mb-[3rem] text-n-3">
-                Brainwave unlocks the potential of AI-powered applications
-              </p>
-
-            </div>
-
-            <Generating className="absolute left-4 right-4 bottom-4 border-n-1/10 border lg:left-1/2 lg-right-auto lg:bottom-8 lg:-translate-x-1/2" />
           </div>
 
           <div className="relative z-1 grid gap-5 lg:grid-cols-2">
             <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden">
               <div className="absolute inset-0">
                 <img
-                  src={''}
+                  src={robot1}
                   className="h-full w-full object-cover"
                   width={630}
                   height={750}
@@ -100,7 +180,7 @@ const Services = () => {
 
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
                 <img
-                  src={''}
+                  src={""}
                   className="w-full h-full object-cover"
                   width={520}
                   height={400}
