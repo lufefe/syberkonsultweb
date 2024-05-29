@@ -1,18 +1,20 @@
 import Section from "./Section";
 import Heading from "./Heading";
-import { robot1, robot4, service2, service3 } from "../assets";
+import { gradient, robot1, robot4, service2, service3 } from "../assets";
 import { brainwaveServicesIcons } from "../constants";
 import {
   PhotoChatMessage,
   Gradient,
   VideoBar,
   VideoChatMessage,
-} from "./design/Services";
+} from "./design/ContactDesign";
 
 import Generating from "./Generating";
 
 const Services = () => {
+
   return (
+
     <Section id="contact-us">
       <div className="container">
         <Heading
@@ -23,7 +25,7 @@ const Services = () => {
         <div className="relative">
           <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
             <div className="relative z-1 w-full ml-auto">
-              {/* CONTACT FORM */}
+              {/* CONTACT FORM // todo : implement send email functionality */}
               <form class="p-15">
                 <div class="flex flex-wrap -mx-3 mb-6">
                   <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -34,7 +36,7 @@ const Services = () => {
                       First Name
                     </label>
                     <input
-                      class="appearance-none block w-full bg-gray-200/5 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                      class="appearance-none block w-full bg-gray-200/5 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500 focus:text-n-1"
                       id="grid-first-name"
                       type="text"
                       placeholder="Jane"
@@ -51,7 +53,7 @@ const Services = () => {
                       Last Name
                     </label>
                     <input
-                      class="appearance-none block w-full bg-gray-200/5 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      class="appearance-none block w-full bg-gray-200/5 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500 focus:text-n-1"
                       id="grid-last-name"
                       type="text"
                       placeholder="Doe"
@@ -68,7 +70,7 @@ const Services = () => {
                       Email Address
                     </label>
                     <input
-                      class="appearance-none block w-full bg-gray-200/5 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      class="appearance-none block w-full bg-gray-200/5 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none  focus:border-gray-500 focus:text-n-1"
                       id="grid-email"
                       type="email"
                       placeholder="********@*****.**"
@@ -82,10 +84,10 @@ const Services = () => {
                       Website
                     </label>
                     <input
-                      class="appearance-none block w-full bg-gray-200/5 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      class="appearance-none block w-full bg-gray-200/5 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none  focus:border-gray-500 focus:text-n-1"
                       id="grid-email"
                       type="text"
-                      placeholder="www.website.com"
+                      placeholder="www.mycompany.com"
                     />
                   </div>
                 </div>
@@ -100,7 +102,7 @@ const Services = () => {
                     </label>
                     <textarea
                       rows="10"
-                      class="appearance-none block w-full bg-gray-200/5 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      class="appearance-none block w-full bg-gray-200/5 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none  focus:border-gray-500 focus:text-n-1"
                     ></textarea>
                   </div>
                   <div class="flex justify-between w-full px-3">
@@ -122,7 +124,7 @@ const Services = () => {
             </div>
 
           </div>
-
+          {/* left contact section */}
           <div className="relative z-1 grid gap-5 lg:grid-cols-2">
             <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden">
               <div className="absolute inset-0">
@@ -136,60 +138,16 @@ const Services = () => {
               </div>
 
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
-                <h4 className="h4 mb-4">Photo editing</h4>
-                <p className="body-2 mb-[3rem] text-n-3">
-                  Automatically enhance your photos using our AI app&apos;s
-                  photo editing feature. Try it now!
-                </p>
+                <Generating />
               </div>
 
               <PhotoChatMessage />
             </div>
+            {/* Map right hand side */}
+            <div className="bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
+            
+              <iframe title="SyberKonsult Office" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.0851060846935!2d28.052090300000003!3d-26.096140400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95733b19c478ef%3A0xb30e57e2cf5e82d5!2sSunset%20Towers%2C%20Benmore%20Rd%2C%20Morningside%2C%20Sandton%2C%202057%2C%20South%20Africa!5e0!3m2!1sen!2suk!4v1716936832575!5m2!1sen!2suk" className="w-full h-full rounded-3xl overflow-hidden lg:min-h-[46rem]" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" aria-hidden="false" tabindex="0" style={{filter:"invert(90%)"}} />
 
-            <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
-              <div className="py-12 px-4 xl:px-8">
-                <h4 className="h4 mb-4">Video generation</h4>
-                <p className="body-2 mb-[2rem] text-n-3">
-                  The world’s most powerful AI photo and video art generation
-                  engine. What will you create?
-                </p>
-
-                <ul className="flex items-center justify-between">
-                  {brainwaveServicesIcons.map((item, index) => (
-                    <li
-                      key={index}
-                      className={`rounded-2xl flex items-center justify-center ${
-                        index === 2
-                          ? "w-[3rem] h-[3rem] p-0.25 bg-conic-gradient md:w-[4.5rem] md:h-[4.5rem]"
-                          : "flex w-10 h-10 bg-n-6 md:w-15 md:h-15"
-                      }`}
-                    >
-                      <div
-                        className={
-                          index === 2
-                            ? "flex items-center justify-center w-full h-full bg-n-7 rounded-[1rem]"
-                            : ""
-                        }
-                      >
-                        <img src={item} width={24} height={24} alt={item} />
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
-                <img
-                  src={""}
-                  className="w-full h-full object-cover"
-                  width={520}
-                  height={400}
-                  alt="Scary robot"
-                />
-
-                <VideoChatMessage />
-                <VideoBar />
-              </div>
             </div>
           </div>
 

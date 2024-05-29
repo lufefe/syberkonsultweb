@@ -1,7 +1,7 @@
 import { syberkonsult_transp, check } from "../assets";
 import { teamPics, aboutContent, aboutText } from "../constants";
 import Section from "./Section";
-import { LeftCurve, RightCurve } from "./design/Collaboration";
+import { LeftCurve, RightCurve } from "./design/AboutDesign";
 
 const About = () => {
   return (

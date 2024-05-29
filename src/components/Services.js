@@ -2,10 +2,10 @@ import { services } from "../constants";
 import Heading from "./Heading";
 import Section from "./Section";
 import Arrow from "../assets/svg/Arrow";
-import { GradientLight } from "./design/Benefits";
+import { GradientLight } from "./design/ServicesDesign";
 import ClipPath from "../assets/svg/ClipPath";
 
-const Benefits = () => {
+const Services = () => {
   return (
     <Section id="services">
       <div className="container relative z-2">
@@ -64,4 +64,4 @@ const Benefits = () => {
   );
 };
 
-export default Benefits;
+export default Services;

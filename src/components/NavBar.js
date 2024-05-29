@@ -5,7 +5,7 @@ import { brainwave, syberkonsult_transp } from "../assets"; //todo format/resize
 import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
-import { HamburgerMenu } from "./design/Header";
+import { HamburgerMenu } from "./design/NavBarDesign";
 
 const Header = () => {
   const location = useLocation();

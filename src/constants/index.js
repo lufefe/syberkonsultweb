@@ -10,21 +10,16 @@ import {
   auditIcon,
   manServIcon,
   execMember,
-  chromecast,
-  disc02,
   discordBlack,
   facebook,
   instagram,
   notification2,
   notification3,
   notification4,
-  recording01,
-  recording03,
   roadmap1,
   roadmap2,
   roadmap3,
   roadmap4,
-  sliders04,
   telegram,
   twitter,
   isoLogo,
@@ -71,47 +66,44 @@ export const notificationImages = [notification4, notification3, notification2];
 
 export const companyLogos = [depTourismLogo, accentureLogo, microsoftLogo, isoLogo, teslaLogo];
 
-export const brainwaveServicesIcons = [
-  recording03,
-  recording01,
-  disc02,
-  chromecast,
-  sliders04,
-];
 
 export const ourwork = [
   {
     id: "0",
-    title: "Generative AI Risk Management",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2023",
-    status: "done",
+    title: "Generative AI",
+    text: "Implementation of Data Loss Prevention and the relevant policies to ensure the use of Generative AI doesn't divulge or leake sensitive patient information of any (PII). This also ensures compliance with the relevant healthcare regulations.",
+    topic: "Gen AI | DLP | COMPLIANCE",
+    industry: "Healthcare",
     imageUrl: roadmap1,
     colorful: true,
   },
   {
     id: "1",
     title: "Gamification of Cyber Awareness and Training",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
-    date: "May 2023",
-    status: "progress",
+    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to identify and report potential phishing emails and always be concious about their role in shielding against cyber-attacks.",
+    topic: "Awareness Training | Phishing",
+    industry : "Military",
     imageUrl: roadmap2,
+    
   },
   {
     id: "2",
-    title: "Cybersecurity Chatbot",
+    title: "Security Outsourcing",
     text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    date: "May 2023",
-    status: "done",
+    topic: "Managed Services ",
+    industry : "Government",
     imageUrl: roadmap3,
+    
   },
   {
     id: "3",
     title: "Integration with APIs",
     text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
-    status: "progress",
+    topic: "Identity Management",
+    industry: "Insurance",
     imageUrl: roadmap4,
+    colorful: true,
+
   },
 ];
 

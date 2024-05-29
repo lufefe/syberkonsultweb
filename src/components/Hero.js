@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Section from "./Section";
 import {robot6 } from "../assets";
-import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
+import { BackgroundCircles, BottomLine, Gradient } from "./design/HeroDesign";
 import { heroIcons } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
 import Notification from "./Notification";

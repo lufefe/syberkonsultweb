@@ -7,9 +7,6 @@ import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
 import play from "./play.svg";
 import gradient from "./gradient.png";
 import smallSphere from "./4-small.png";
-import grid from "./grid.png";
-import check2 from "./check-02.svg";
-import loading1 from "./loading-01.svg";
 import isoLogo from "./iso-logo.png";//part of rebranding
 import depTourismLogo from "./deptourism-logo.png";//part of rebranding
 import microsoftLogo from "./microsoft-logo.png";//part of rebranding
@@ -77,14 +74,11 @@ export {
   syberkonsult_transp,
   brainwave,
   check,
-  check2,
-  loading1,
   brainwaveSymbol,
   brainwaveWhiteSymbol,
   play,
   gradient,
   smallSphere,
-  grid,
   isoLogo,
   teslaLogo,
   microsoftLogo,
