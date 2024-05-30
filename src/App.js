@@ -1,4 +1,4 @@
-import ButtonGradient from "./assets/svg/ButtonGradient";
+import ButtonGradient from "./assets/customsvg/ButtonGradient";
 import Services from "./components/Services";
 import About from "./components/About";
 import Footer from "./components/Footer";

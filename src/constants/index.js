@@ -16,10 +16,10 @@ import {
   notification2,
   notification3,
   notification4,
-  roadmap1,
-  roadmap2,
-  roadmap3,
-  roadmap4,
+  ourwork1,
+  ourwork2,
+  ourwork3,
+  ourwork4,
   telegram,
   twitter,
   isoLogo,
@@ -27,6 +27,8 @@ import {
   microsoftLogo,
   depTourismLogo,
   accentureLogo,
+  deutscheBankLogo,
+  freestateHealthLogo,
   robot6,
 } from "../../src/assets";
 
@@ -64,44 +66,44 @@ export const heroIcons = [iconFirewall, iconKey, iconPass, iconShield];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [depTourismLogo, accentureLogo, microsoftLogo, isoLogo, teslaLogo];
+export const companyLogos = [depTourismLogo, accentureLogo, microsoftLogo, isoLogo, teslaLogo, deutscheBankLogo, freestateHealthLogo];
 
 
 export const ourwork = [
   {
     id: "0",
-    title: "Generative AI",
-    text: "Implementation of Data Loss Prevention and the relevant policies to ensure the use of Generative AI doesn't divulge or leake sensitive patient information of any (PII). This also ensures compliance with the relevant healthcare regulations.",
-    topic: "Gen AI | DLP | COMPLIANCE",
+    title: "Security Implications of AI Chatbots in HealthCare",
+    text: "Implementation of Data Loss Prevention and the relevant policies to ensure the use of AI doesn't divulge or leak sensitive patient information or (PII). This also ensures compliance with the relevant healthcare regulations.",
+    topic: "AI | DLP",
     industry: "Healthcare",
-    imageUrl: roadmap1,
+    imageUrl: ourwork1,
     colorful: true,
   },
   {
     id: "1",
     title: "Gamification of Cyber Awareness and Training",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to identify and report potential phishing emails and always be concious about their role in shielding against cyber-attacks.",
-    topic: "Awareness Training | Phishing",
-    industry : "Military",
-    imageUrl: roadmap2,
+    text: "Using gamified cybersecurity training can be an effective way to engage employees and improve their security practices. By tailoring the training to your audience, keeping it relevant and accessible, and mixing up the activities, businesses can make cybersecurity training fun and engaging.",
+    topic: "Phishing",
+    industry :"Banking",
+    imageUrl: ourwork2,
     
   },
   {
     id: "2",
-    title: "Security Outsourcing",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    topic: "Managed Services ",
+    title: "Managed Services",
+    text: "With a team of highly-skilled security engineers and security analysts focused on constantly improving your security posture, we don’t leave anything to chance. Our collective IP approach and strong, transparent and trusted relationships make our MSS the choice of highly regulated and risk averse organisations.",
+    topic: "Outsourcing",
     industry : "Government",
-    imageUrl: roadmap3,
+    imageUrl: ourwork3,
     
   },
   {
     id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    topic: "Identity Management",
+    title: "Identity, Credential, and Access Management (ICAM)",
+    text: "Creating trusted digital identity representations of individuals and non-person entities (NPEs), bind those identities to credentials that may serve as a proxy for the individual or NPE in access transactions, and leverage the credentials to provide authorized access to an agency‘s resources.",
+    topic: "ICAM",
     industry: "Insurance",
-    imageUrl: roadmap4,
+    imageUrl: ourwork4,
     colorful: true,
 
   },
@@ -166,42 +168,6 @@ export const teamPics = [
   //   height: 34,
   // },
 
-];
-
-export const pricing = [
-  {
-    id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
-    price: "0",
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
-  },
-  {
-    id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
-    features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
-    ],
-  },
-  {
-    id: "2",
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: null,
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
-  },
 ];
 
 export const services = [

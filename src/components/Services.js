@@ -1,9 +1,9 @@
 import { services } from "../constants";
 import Heading from "./Heading";
 import Section from "./Section";
-import Arrow from "../assets/svg/Arrow";
+import Arrow from "../assets/customsvg/Arrow";
 import { GradientLight } from "./design/ServicesDesign";
-import ClipPath from "../assets/svg/ClipPath";
+import ClipPath from "../assets/customsvg/ClipPath";
 
 const Services = () => {
   return (

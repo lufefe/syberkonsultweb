@@ -1,4 +1,4 @@
-import ButtonSvg from "../assets/svg/ButtonSvg";
+import ButtonSvg from "../assets/customsvg/ButtonSvg";
 
 const Button = ({ className, href, onClick, children, px, white }) => {
   const classes = `button 
@@ -8,9 +8,9 @@ const Button = ({ className, href, onClick, children, px, white }) => {
     justify-center 
     h-11 
     transition-colors 
-    hover:text-color-1 
+    hover:text-n-1
     ${px || "px-7"}  
-    ${white ? "text-n-8" : "text-n-1"} 
+    ${white ? "text-n-8" : "text-n-3"} 
     ${className || ""}`;
 
   /* conditionals ${...} explanations :

@@ -1,13 +1,7 @@
 import Section from "./Section";
 import Heading from "./Heading";
-import { gradient, robot1, robot4, service2, service3 } from "../assets";
-import { brainwaveServicesIcons } from "../constants";
-import {
-  PhotoChatMessage,
-  Gradient,
-  VideoBar,
-  VideoChatMessage,
-} from "./design/ContactDesign";
+import { robot1} from "../assets";
+import { PhotoChatMessage, Gradient } from "./design/ContactDesign";
 
 import Generating from "./Generating";
 
@@ -113,7 +107,7 @@ const Services = () => {
                       </label>
                     </div>
                     <button
-                      class="shadow bg-indigo-600 hover:bg-indigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
+                      class="shadow bg-indigo-800 hover:bg-indigo-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded transition ease-in-out delay-150 hover:-translate-y-0.7 hover:scale-110 duration-300"
                       type="submit"
                     >
                       Send Message
@@ -141,7 +135,7 @@ const Services = () => {
                 <Generating />
               </div>
 
-              <PhotoChatMessage />
+              <PhotoChatMessage/>
             </div>
             {/* Map right hand side */}
             <div className="bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">

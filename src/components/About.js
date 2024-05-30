@@ -1,4 +1,4 @@
-import { syberkonsult_transp, check } from "../assets";
+import { check, skLogoOnly} from "../assets";
 import { teamPics, aboutContent, aboutText } from "../constants";
 import Section from "./Section";
 import { LeftCurve, RightCurve } from "./design/AboutDesign";
@@ -10,6 +10,7 @@ const About = () => {
         <div className="max-w-[28rem]">
           <h2 className="h2 mb-4 md:mb-8">About</h2>
           <div className="mb-4">{aboutText}</div>
+          
           <ul className="max-w-[22rem] mb-10 md:mb-14">
             {aboutContent.map((item) => (
               <li className="mb-3 py-3" key={item.id}>
@@ -24,6 +25,7 @@ const About = () => {
             ))}
           </ul>
         </div>
+
         {/* right-side collab apps - to be team section */}
         <div className="lg:ml-auto xl:w-[38rem] mt-4">
           <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto text-center">
@@ -35,10 +37,8 @@ const About = () => {
               <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
                   <img
-                    src={syberkonsult_transp}
-                    width={48}
-                    height={48}
-                    alt="brainwave"
+                    src={skLogoOnly}
+                    alt="SyberKonsult logo"
                   />
                 </div>
               </div>
@@ -48,10 +48,11 @@ const About = () => {
               {teamPics.map((member, index) => (
                 <li
                   key={member.id}
-                  className={`absolute top-0 left-1/2 h-1/2 -ml-[2.5rem] origin-bottom rotate-${
+                  className={`absolute top-5.5 left-1/2 h-1/2 -ml-[2.5rem] origin-bottom rotate-${
                     index * 90
                   }`}
                 >
+
                   <div
                     className={`relative -top-[2rem] flex w-[5rem] h-[5rem] bg-n-7 border border-n-1/15 rounded-xl -rotate-${
                       index * 90

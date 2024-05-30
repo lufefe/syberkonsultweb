@@ -1,60 +1,51 @@
-import syberkonsult from "./syberkonsult.svg"; //part of rebranding
-import syberkonsult_transp from "./syberkonsult_transp.png"; //part of rebranding
-import brainwave from "./brainwave.svg";
-import check from "./check.svg";
-import brainwaveSymbol from "./brainwave-symbol.svg";
-import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
-import play from "./play.svg";
-import gradient from "./gradient.png";
-import smallSphere from "./4-small.png";
-import isoLogo from "./iso-logo.png";//part of rebranding
-import depTourismLogo from "./deptourism-logo.png";//part of rebranding
-import microsoftLogo from "./microsoft-logo.png";//part of rebranding
-import teslaLogo from "./tesla-logo.png";//part of rebranding
-import accentureLogo from "./accenture-logo.png";//part of rebranding
-import iconFirewall from "./icons8-firewall-50.png";//part of rebranding
-import iconKey from "./icons8-key-security-50.png";//part of rebranding
-import iconShield from "./icons8-security-shield-64 (1).png";//part of rebranding
-import iconPass from "./icons8-security-pass-80.png";//part of rebranding
-import recording03 from "./recording-03.svg";
-import recording01 from "./recording-01.svg";
-import disc02 from "./disc-02.svg";
-import chromecast from "./chrome-cast.svg";
-import sliders04 from "./sliders-04.svg";
-import loading from "./loading.png";
-import background from "./background.jpg";
+//Global assets used throughout site
+import syberkonsultNavLogo from "./general/syberkonsultNavLogo.png";
+import loading from "./general/loading.png";
+import skLogoOnly from "./general/logo-only-trans.png";
+import gradient from "./general/gradient.png";
 
-import robot2 from "./hero/robot2.jpg";//part of rebranding
-import robot3 from "./hero/robot3.jpg";//part of rebranding
-import robot4 from "./hero/robot4.jpg";//part of rebranding
-import robot5 from "./hero/robot5.jpg";//part of rebranding
-import robot6 from "./hero/robot6.jpg";//part of rebranding
-import robot7 from "./hero/robot7.jpg"; //part of rebranding
-import robot1 from "./hero/robot1.jpg"; //part of rebranding
+//Hero section assets
+import isoLogo from "./hero/iso-logo.png";
+import depTourismLogo from "./hero/deptourism-logo.png";
+import microsoftLogo from "./hero/microsoft-logo.png";
+import teslaLogo from "./hero/tesla-logo.png";
+import accentureLogo from "./hero/accenture-logo.png";
+import iconFirewall from "./hero/icons8-firewall-50.png";
+import iconKey from "./hero/icons8-key-security-50.png";
+import iconShield from "./hero/icons8-security-shield-64 (1).png";
+import iconPass from "./hero/icons8-security-pass-80.png";
+import robot2 from "./hero/robot2.jpg";
+import robot3 from "./hero/robot3.jpg";
+import robot4 from "./hero/robot4.jpg";
+import robot5 from "./hero/robot5.jpg";
+import robot6 from "./hero/robot6.jpg";
+import robot7 from "./hero/robot7.jpg"; 
+import robot1 from "./hero/robot1.jpg"; 
+import freestateHealthLogo from "./hero/freestateHealth-logo.png";
+import deutscheBankLogo from "./hero/deutscheBank-logo.png";
 
 
-import curve1 from "./collaboration/curve-1.svg";
-import curve2 from "./collaboration/curve-2.svg";
-import execMember from "./collaboration/exec-member.png";
+//About section assets
+import curve1 from "./about/curve-1.svg";
+import curve2 from "./about/curve-2.svg";
+import execMember from "./about/exec-member.png";
+import check from "./about/check.svg";
 
+//Our Work section assets
+import coins from "./ourwork/coins.png";
+import hero from "./ourwork/hero.png";
+import ourwork1 from "./ourwork/voice-ai.svg";
+import ourwork2 from "./ourwork/image-2.png";
+import ourwork3 from "./ourwork/image-3.png";
+import ourwork4 from "./ourwork/image-4.svg";
 
-import lines from "./pricing/lines.svg";
-import stars from "./pricing/stars.svg";
-
-import coins from "./roadmap/coins.png";
-import done from "./roadmap/done.svg";
-import hero from "./roadmap/hero.png";
-import roadmap1 from "./roadmap/image-1.png";
-import roadmap2 from "./roadmap/image-2.png";
-import roadmap3 from "./roadmap/image-3.png";
-import roadmap4 from "./roadmap/image-4.png";
-import undone from "./roadmap/undone.svg";
-
-import syberChat from "./notification/syberkonsult-logo-only.png";//part of rebranding
+//Notification assets used in Hero section
+import syberChat from "./notification/syberkonsult-logo-only.png";
 import notification2 from "./notification/image-2.png";
 import notification3 from "./notification/image-3.png";
 import notification4 from "./notification/image-4.png";
 
+//Services section assets
 import datariskIcon from "./services/datarisk2.png";
 import secAssessIcon from "./services/secAssess.png";
 import secDesignIcon from "./services/secDesign.png"
@@ -62,7 +53,7 @@ import solImpleIcon from "./services/solImpl.png";
 import auditIcon from "./services/audit.png";
 import manServIcon from "./services/manServ.png";
 
-
+// Socials assets used in Footer section
 import discordBlack from "./socials/discord.svg";
 import facebook from "./socials/facebook.svg";
 import instagram from "./socials/instagram.svg";
@@ -70,31 +61,22 @@ import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
 export {
-  syberkonsult,
-  syberkonsult_transp,
-  brainwave,
+  syberkonsultNavLogo,
   check,
-  brainwaveSymbol,
-  brainwaveWhiteSymbol,
-  play,
+  skLogoOnly,
   gradient,
-  smallSphere,
   isoLogo,
   teslaLogo,
   microsoftLogo,
   depTourismLogo,
   accentureLogo,
+  freestateHealthLogo,
+  deutscheBankLogo,
   iconFirewall,
   iconKey,
   iconShield,
   iconPass,
-  recording03,
-  recording01,
-  disc02,
-  chromecast,
-  sliders04,
   loading,
-  background,
   robot1,
   robot2,
   robot3,
@@ -105,16 +87,12 @@ export {
   curve1,
   curve2,
   execMember,
-  lines,
-  stars,
   coins,
-  done,
   hero,
-  roadmap1,
-  roadmap2,
-  roadmap3,
-  roadmap4,
-  undone,
+  ourwork1,
+  ourwork2,
+  ourwork3,
+  ourwork4,
   syberChat,
   notification2,
   notification3,
