@@ -32,6 +32,8 @@ import {
   robot6,
 } from "../../src/assets";
 
+
+
 export const navigation = [
   {
     id: "0",
@@ -67,7 +69,6 @@ export const heroIcons = [iconFirewall, iconKey, iconPass, iconShield];
 export const notificationImages = [notification4, notification3, notification2];
 
 export const companyLogos = [depTourismLogo, accentureLogo, microsoftLogo, isoLogo, teslaLogo, deutscheBankLogo, freestateHealthLogo];
-
 
 export const ourwork = [
   {

@@ -32,12 +32,10 @@ import execMember from "./about/exec-member.png";
 import check from "./about/check.svg";
 
 //Our Work section assets
-import coins from "./ourwork/coins.png";
-import hero from "./ourwork/hero.png";
-import ourwork1 from "./ourwork/voice-ai.svg";
+import ourwork1 from "./ourwork/voice-ai.png";
 import ourwork2 from "./ourwork/image-2.png";
 import ourwork3 from "./ourwork/image-3.png";
-import ourwork4 from "./ourwork/image-4.svg";
+import ourwork4 from "./ourwork/image-4.png";
 
 //Notification assets used in Hero section
 import syberChat from "./notification/syberkonsult-logo-only.png";
@@ -87,8 +85,6 @@ export {
   curve1,
   curve2,
   execMember,
-  coins,
-  hero,
   ourwork1,
   ourwork2,
   ourwork3,
