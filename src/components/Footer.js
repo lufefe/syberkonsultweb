@@ -17,8 +17,8 @@ const Footer = () => {
             <a
               key={item.id}
               href={item.url}
-              target="_blank"
-              rel="noopener noreferrer"
+              // target="_blank"
+              // rel="noopener noreferrer"
               className="flex items-center justify-center h-10 text-n-4 transition-colors hover:text-n-1"
             >{item.title}</a>
           ))}
@@ -30,8 +30,8 @@ const Footer = () => {
             <a
               key={item.id}
               href={item.url}
-              target="_blank"
-              rel="noopener noreferrer"
+              // target="_blank"
+              // rel="noopener noreferrer"
               className="flex items-center justify-center w-10 h-10 bg-n-7 rounded-full transition-colors hover:bg-n-6"
             >
               <img src={item.iconUrl} width={16} height={16} alt={item.title} />

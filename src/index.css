@@ -85,3 +85,7 @@
 .-rotate-360 {
   @apply rotate-[-360deg];
 }
+
+.grecaptcha-badge { 
+  visibility: hidden !important;
+}
