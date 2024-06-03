@@ -29,7 +29,7 @@ const ContactUs = () => {
   const onSubmit = () => {
     window.grecaptcha.ready(function() {
       window.grecaptcha
-        .execute("6Le1ku4pAAAAANKLtJt3xZM54LnDHXaVDPhoy--5", {
+        .execute("6LffKPApAAAAAOjoHmF6COmeya_LzAZ6mtUQhr6z", {
           action: "submit",
         })
         .then(function (token) {
@@ -41,7 +41,7 @@ const ContactUs = () => {
 
   const verifyToken = (token) => {
     // call a backend API to verify reCAPTCHA response
-    fetch("https://localhost:3000/verify", {
+    fetch("https://localhost:8000/verify", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -66,8 +66,8 @@ const ContactUs = () => {
   const sendEmail = (data) => {
     setIsLoading(true);
     emailjs
-      .sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, {
-        publicKey: process.env.publicKey,
+      .sendForm("service_nxaed11", "template_juxwvh7", form.current, {
+        publicKey: "LGrlv2ne2fUbP9CaW",
       })
       .then(
         () => {
@@ -100,7 +100,6 @@ const ContactUs = () => {
         <div className="relative">
           <div className="relative z-1 flex items-center mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
             <div className="relative z-1 w-full ml-auto">
-              {/* CONTACT FORM // todo : implement send email functionality */}
               <form
                 ref={form}
                 className="p-15"
@@ -310,8 +309,8 @@ const ContactUs = () => {
                     className="underline"
                   >
                     Terms of Service
-                  </a>{" "}
-                  apply.
+                  </a>
+                  &nbsp;apply.
                 </p>
               </form>
             </div>

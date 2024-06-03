@@ -3,9 +3,10 @@ const express = require('express')
 const cors = require('cors')
 const axios = require('axios')
 const app = express()
-const port = 3000
+const port = 8000
 
-const SITE_SECRET = process.env.SYBERKONSULT_SECRET_KEY
+//todo store site secret key in aws
+const SITE_SECRET = ""
 
 app.use(cors())
 app.use(express.json())

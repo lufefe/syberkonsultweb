@@ -1,5 +1,4 @@
 import { companyLogos } from "../constants";
-import { AnimatePresence, motion } from "framer-motion";
 
 const CompanyLogos = ({ className }) => {
   return (
