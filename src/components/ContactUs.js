@@ -27,7 +27,7 @@ const ContactUs = () => {
   const [isSent, setIsSent] = useState(false);
 
   const onSubmit = () => {
-    window.grecaptcha.ready(function() {
+    window.grecaptcha.ready(function () {
       window.grecaptcha
         .execute("6LffKPApAAAAAOjoHmF6COmeya_LzAZ6mtUQhr6z", {
           action: "submit",
@@ -53,16 +53,15 @@ const ContactUs = () => {
         // Check reCaptcha status and score
         if (res.success && res.score > 0.7) {
           // send email;
-          console.log("result", res)
+          console.log("result", res);
           // sendEmail();
         } else {
           //reCaptcha couldn't verify
-          alert("Could not verify reCAPTCHA!, Please try again.")
+          alert("Could not verify reCAPTCHA!, Please try again.");
         }
       });
   };
 
-  
   const sendEmail = (data) => {
     setIsLoading(true);
     emailjs
@@ -105,7 +104,7 @@ const ContactUs = () => {
                 className="p-15"
                 onSubmit={handleSubmit(onSubmit)}
                 autoComplete="off"
-                action= "submit"
+                action="submit"
               >
                 <input
                   type="hidden"
@@ -338,6 +337,7 @@ const ContactUs = () => {
 
               <PhotoChatMessage />
             </div>
+
             {/* Map right hand side */}
             <div className="relative min-h-[39rem] border border-n-1/10 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
               <iframe
@@ -345,7 +345,6 @@ const ContactUs = () => {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.0851060846935!2d28.052090300000003!3d-26.096140400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95733b19c478ef%3A0xb30e57e2cf5e82d5!2sSunset%20Towers%2C%20Benmore%20Rd%2C%20Morningside%2C%20Sandton%2C%202057%2C%20South%20Africa!5e0!3m2!1sen!2suk!4v1716936832575!5m2!1sen!2suk"
                 className="w-full h-full rounded-3xl overflow-hidden lg:min-h-[46rem]"
                 allowfullscreen=""
-                loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
                 frameborder="0"
                 aria-hidden="false"

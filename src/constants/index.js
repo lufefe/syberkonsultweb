@@ -38,22 +38,22 @@ export const navigation = [
   {
     id: "0",
     title: "Services",
-    url: "#services",
+    url: "/#services",
   },
   {
     id: "1",
     title: "About",
-    url: "#about",
+    url: "/#about",
   },
 {
     id: "2",
     title: "Our Work",
-    url: "#ourwork",
+    url: "/#ourwork",
   },
   {
     id: "3",
     title: "Contact Us",
-    url: "#contact-us",
+    url: "/#contact-us",
   },
   
   // {
@@ -255,21 +255,51 @@ export const footerlinks = [
   {
     id: "0",
     title: "Privacy Policy",
-    url: "#",
+    url: "/privacypolicy",
   },
   {
     id: "1",
     title: "Terms of Service",
-    url: "#",
+    url: "/termsofservice",
   },
   {
     id: "2",
     title: "Careers",
-    url: "#",
+    url: "/careers",
   },
   {
     id: "3",
     title: "Blog",
-    url: "#",
+    url: "/blog",
   },
 ];
+
+export const paragraph = 
+"SyberKonsult was founded to fulfill the need of state-of-the-art cybersecurity solutions in response to the rapid emergence of new technologies across industries. We operate as a propriety limited company with a R&D partnership with Invidum Technologies for cybersecurity products. \nOur team consists of IT Risk specialists and IT Security experts who deliver the best risk management and security implementations, respectively. We provide our services in alignment to industry standards such as NIST and ISO 27001. We operate in a lean setting and our primary security offering is the Microsoft 365 platform…"
+
+// export const ourstory = [
+//   {
+//     id: 1,
+//     title: "Inception",
+//     img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+//     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+//   },
+//   {
+//     id: 2,
+//     title: "Growth",
+//     img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+//     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+//   },
+//   {
+//     id: 3,
+//     title: "Future",
+//     img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+//     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+//   },
+//   {
+//     id: 4,
+//     title: "Vision",
+//     img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+//     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+//   },
+// ];
