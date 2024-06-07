@@ -275,31 +275,4 @@ export const footerlinks = [
 ];
 
 export const paragraph = 
-"SyberKonsult was founded to fulfill the need of state-of-the-art cybersecurity solutions in response to the rapid emergence of new technologies across industries. We operate as a propriety limited company with a R&D partnership with Invidum Technologies for cybersecurity products. \nOur team consists of IT Risk specialists and IT Security experts who deliver the best risk management and security implementations, respectively. We provide our services in alignment to industry standards such as NIST and ISO 27001. We operate in a lean setting and our primary security offering is the Microsoft 365 platform…"
-
-// export const ourstory = [
-//   {
-//     id: 1,
-//     title: "Inception",
-//     img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-//     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-//   },
-//   {
-//     id: 2,
-//     title: "Growth",
-//     img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-//     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-//   },
-//   {
-//     id: 3,
-//     title: "Future",
-//     img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-//     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-//   },
-//   {
-//     id: 4,
-//     title: "Vision",
-//     img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-//     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-//   },
-// ];
+"SyberKonsult was founded to fulfill the need of state-of-the-art cybersecurity solutions in response to the rapid emergence of new technologies across industries. We operate as a propriety limited company with a R&D partnership with Invidum Technologies for cybersecurity products. Our team consists of IT Risk specialists and IT Security experts who deliver the best risk management and security implementations, respectively. With our teams' wealth of experience, we safegaurd our core values and withold ourselves to the highest degree of service. Our founding year of 2024 marks an extraordinary posture of the cybersecurity realm. As a newly minted start-up firm, we have focused on building a robust brand to cement the firm's position in the market. Our slogan 'To foster and deliver unparalleled digital transformation and security assurance' is testament to our commitment for new-gen solutions for security."

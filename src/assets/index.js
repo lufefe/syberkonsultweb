@@ -19,11 +19,10 @@ import robot3 from "./hero/robot3.jpg";
 import robot4 from "./hero/robot4.jpg";
 import robot5 from "./hero/robot5.jpg";
 import robot6 from "./hero/robot6.jpg";
-import robot7 from "./hero/robot7.jpg"; 
-import robot1 from "./hero/robot1.jpg"; 
+import robot7 from "./hero/robot7.jpg";
+import robot1 from "./hero/robot1.jpg";
 import freestateHealthLogo from "./hero/freestateHealth-logo.png";
 import deutscheBankLogo from "./hero/deutscheBank-logo.png";
-
 
 //About section assets
 import curve1 from "./about/curve-1.svg";
@@ -46,7 +45,7 @@ import notification4 from "./notification/image-4.png";
 //Services section assets
 import datariskIcon from "./services/datarisk2.png";
 import secAssessIcon from "./services/secAssess.png";
-import secDesignIcon from "./services/secDesign.png"
+import secDesignIcon from "./services/secDesign.png";
 import solImpleIcon from "./services/solImpl.png";
 import auditIcon from "./services/audit.png";
 import manServIcon from "./services/manServ.png";
@@ -57,6 +56,24 @@ import facebook from "./socials/facebook.svg";
 import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
+
+//Our Story page images
+import pic1 from "../assets/ourstory/1.jpg";
+import pic2 from "../assets/ourstory/2.jpg";
+import pic3 from "../assets/ourstory/3.jpg";
+import pic4 from "../assets/ourstory/4.jpg";
+import pic5 from "../assets/ourstory/5.jpg";
+import pic6 from "../assets/ourstory/6.jpg";
+import pic7 from "../assets/ourstory/7.jpg";
+import pic8 from "../assets/ourstory/8.jpg";
+import pic9 from "../assets/ourstory/9.jpg";
+import pic10 from "../assets/ourstory/10.jpg";
+import pic11 from "../assets/ourstory/11.jpg";
+import pic12 from "../assets/ourstory/12.jpg";
+import pic13 from "../assets/ourstory/13.jpg";
+import pic14 from "../assets/ourstory/14.jpg";
+import pic15 from "../assets/ourstory/15.jpg";
+import pic16 from "../assets/ourstory/16.jpg";
 
 export {
   syberkonsultNavLogo,
@@ -104,4 +121,20 @@ export {
   instagram,
   telegram,
   twitter,
+  pic1,
+  pic2,
+  pic3,
+  pic4,
+  pic5,
+  pic6,
+  pic7,
+  pic8,
+  pic9,
+  pic10,
+  pic11,
+  pic12,
+  pic13,
+  pic14,
+  pic15,
+  pic16,
 };
