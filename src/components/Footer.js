@@ -1,11 +1,15 @@
 import React from "react";
 import Section from "./Section";
 import { footerlinks, socials } from "../constants";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <Section crosses className="!px-0 !py-10">
-      <p className="font-thin text-n-4 ml-2">Disclaimer: some of the content in this website is for placeholder purposes and doesn't represent accurate information (i.e clients).</p>
+      <p className="font-thin text-n-4 ml-2">
+        Disclaimer: some of the content in this website is for placeholder
+        purposes and doesn't represent accurate information (i.e clients).
+      </p>
 
       <div className="container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
         <p className="caption text-n-4 lg:block">
@@ -14,13 +18,13 @@ const Footer = () => {
         {/* FOOTER LINKS */}
         <ul className="flex gap-14 flex-wrap ">
           {footerlinks.map((item) => (
-            <a
+            <Link
               key={item.id}
-              href={item.url}
-              // target="_blank"
-              // rel="noopener noreferrer"
+              to={item.url}
               className="flex items-center justify-center h-10 text-n-4 transition-colors hover:text-n-1"
-            >{item.title}</a>
+            >
+              {item.title}
+            </Link>
           ))}
         </ul>
 
