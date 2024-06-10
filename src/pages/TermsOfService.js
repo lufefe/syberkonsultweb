@@ -14,7 +14,7 @@ const TermsOfService = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="relative inline-block p-10 m-5 items-center h-[100vh]"
+        className="relative inline-block px-10 m-5 items-center h-[100vh]"
       >
         <ProgressBar />
 

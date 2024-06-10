@@ -66,7 +66,7 @@ const OurStory = () => {
         <Character paragraph={paragraph} />
         <br />
       </motion.div>
-
+{/* 
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -82,7 +82,7 @@ const OurStory = () => {
 
 
         
-      </motion.div>
+      </motion.div> */}
 
       <motion.div
         initial={{ opacity: 0 }}

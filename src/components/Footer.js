@@ -8,7 +8,7 @@ const Footer = () => {
     <Section crosses className="!px-0 !py-10">
       <p className="font-thin text-n-4 ml-2">
         Disclaimer: some of the content in this website is for placeholder
-        purposes and doesn't represent accurate information (i.e clients).
+        purposes and doesn't represent accurate information (i.e our clients section).
       </p>
 
       <div className="container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">

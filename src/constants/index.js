@@ -9,7 +9,10 @@ import {
   solImpleIcon,
   auditIcon,
   manServIcon,
-  execMember,
+  ceo,
+  cfo,
+  legal,
+  cto,
   discordBlack,
   facebook,
   instagram,
@@ -20,13 +23,12 @@ import {
   ourwork2,
   ourwork3,
   ourwork4,
-  telegram,
   twitter,
   isoLogo,
   teslaLogo,
   microsoftLogo,
   depTourismLogo,
-  accentureLogo,
+  kpmgLogo,
   deutscheBankLogo,
   freestateHealthLogo,
   robot6,
@@ -68,7 +70,7 @@ export const heroIcons = [iconFirewall, iconKey, iconPass, iconShield];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [depTourismLogo, accentureLogo, microsoftLogo, isoLogo, teslaLogo, deutscheBankLogo, freestateHealthLogo];
+export const companyLogos = [depTourismLogo, kpmgLogo, microsoftLogo, isoLogo, teslaLogo, deutscheBankLogo, freestateHealthLogo];
 
 export const ourwork = [
   {
@@ -111,7 +113,7 @@ export const ourwork = [
 ];
 
 export const aboutText =
-  "SyberKonsult was founded to fulfill the need of state-of-the-art cybersecurity solutions in response to the rapid emergence of new technologies across industries. We operate as a propriety limited company with a R&D partnership with Invidum Technologies for cybersecurity products. Our team consists of IT Risk specialists and IT Security experts who deliver the best risk management and security implementations, respectively. ";
+  "SyberKonsult is a cybersecurity professional services firm providing a wide range of advisory & consultancy services as well as implementation solutions to small businesses, big corporate clients, and government institutions. Our key focus is in-depth protection of IT assets and enhancing the overall security of our clients’ infrastructure, ensuring compliance and good governance.";
 
 export const aboutContent = [
   {
@@ -132,34 +134,41 @@ export const aboutContent = [
   },
 ];
 
-export const teamPics = [
+export const teamMembers = [
   {
     id: "0",
     title: "CEO",
-    icon: execMember,
+    icon: ceo,
     width: 'auto',
     height: 'auto',
+    url:'/ceo'
   },
   {
     id: "1",
     title: "CTO",
-    icon: execMember,
+    icon: cto,
     width: 'auto',
     height: 'auto',
+    url:'/cto'
+
   },
   {
     id: "2",
     title: "CFO",
-    icon: execMember,
+    icon: cfo,
     width: 'auto',
     height: 'auto',
+    url:'/cfo'
+
   },
   {
     id: "3",
-    title: "Legal",
-    icon: execMember,
+    title: "Counsel",
+    icon: legal,
     width: 'auto',
     height: 'auto',
+    url:'/counsel'
+
   },
   // {
   //   id: "4",
@@ -170,6 +179,44 @@ export const teamPics = [
   // },
 
 ];
+
+export const ceoProfile = [
+  {
+    id:"ceo",
+    name:"Ayabonga Jumba",
+    title:"Chief Executive Officer",
+    text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a nulla a leo iaculis pulvinar. Mauris et accumsan orci. Vivamus ullamcorper blandit lectus, a ullamcorper nulla molestie at. Ut tellus purus, vestibulum ut leo quis, viverra interdum turpis. Nullam nec tristique velit. Phasellus in sem vel mauris pretium mattis. Sed non sollicitudin sem, ac ullamcorper dolor. Duis consequat elementum ullamcorper. Duis porttitor risus ultricies sodales malesuada. Donec vitae ex magna. Suspendisse hendrerit est nec felis suscipit condimentum. Donec pellentesque sed tellus imperdiet porta. Nulla vestibulum metus mauris, at efficitur nunc auctor vel. Nullam elementum eget risus eu eleifend.",
+    keyAreas:["Strategy", "Risk", "Governance", "Global Expansion", "Acquisitions"]
+  },
+]
+
+export const cfoProfile = [
+  {
+    id:"cfo",
+    name:"TBC",
+    title:"Chief Financial Officer",
+    text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a nulla a leo iaculis pulvinar. Mauris et accumsan orci. Vivamus ullamcorper blandit lectus, a ullamcorper nulla molestie at. Ut tellus purus, vestibulum ut leo quis, viverra interdum turpis. Nullam nec tristique velit. Phasellus in sem vel mauris pretium mattis. Sed non sollicitudin sem, ac ullamcorper dolor. Duis consequat elementum ullamcorper. Duis porttitor risus ultricies sodales malesuada. Donec vitae ex magna. Suspendisse hendrerit est nec felis suscipit condimentum. Donec pellentesque sed tellus imperdiet porta. Nulla vestibulum metus mauris, at efficitur nunc auctor vel. Nullam elementum eget risus eu eleifend.",
+    keyAreas:["Financial", "Audit", "Tax", "IPO"]
+  },
+]
+export const ctoProfile = [
+  {
+    id:"cto",
+    name:"TBC",
+    title:"Chief Technology Officer",
+    text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a nulla a leo iaculis pulvinar. Mauris et accumsan orci. Vivamus ullamcorper blandit lectus, a ullamcorper nulla molestie at. Ut tellus purus, vestibulum ut leo quis, viverra interdum turpis. Nullam nec tristique velit. Phasellus in sem vel mauris pretium mattis. Sed non sollicitudin sem, ac ullamcorper dolor. Duis consequat elementum ullamcorper. Duis porttitor risus ultricies sodales malesuada. Donec vitae ex magna. Suspendisse hendrerit est nec felis suscipit condimentum. Donec pellentesque sed tellus imperdiet porta. Nulla vestibulum metus mauris, at efficitur nunc auctor vel. Nullam elementum eget risus eu eleifend.",
+    keyAreas:["Strategy", "Innovation", "Cybersecurity", "Global Expansion"]
+  },
+]
+export const counselProfile = [
+  {
+    id:"counsel",
+    name:"TBC",
+    title:"Chief Counsel",
+    text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a nulla a leo iaculis pulvinar. Mauris et accumsan orci. Vivamus ullamcorper blandit lectus, a ullamcorper nulla molestie at. Ut tellus purus, vestibulum ut leo quis, viverra interdum turpis. Nullam nec tristique velit. Phasellus in sem vel mauris pretium mattis. Sed non sollicitudin sem, ac ullamcorper dolor. Duis consequat elementum ullamcorper. Duis porttitor risus ultricies sodales malesuada. Donec vitae ex magna. Suspendisse hendrerit est nec felis suscipit condimentum. Donec pellentesque sed tellus imperdiet porta. Nulla vestibulum metus mauris, at efficitur nunc auctor vel. Nullam elementum eget risus eu eleifend.",
+    keyAreas:["IT Law", "Regulations", "Compliance", "Mergers & Acquisitions", "General Counsel"]
+  },
+]
 
 export const services = [
   {
@@ -239,12 +286,6 @@ export const socials = [
   },
   {
     id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
-  },
-  {
-    id: "4",
     title: "Facebook",
     iconUrl: facebook,
     url: "#",

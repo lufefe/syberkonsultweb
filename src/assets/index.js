@@ -9,7 +9,7 @@ import isoLogo from "./hero/iso-logo.png";
 import depTourismLogo from "./hero/deptourism-logo.png";
 import microsoftLogo from "./hero/microsoft-logo.png";
 import teslaLogo from "./hero/tesla-logo.png";
-import accentureLogo from "./hero/accenture-logo.png";
+import kpmgLogo from "./hero/kpmg-logo.png";
 import iconFirewall from "./hero/icons8-firewall-50.png";
 import iconKey from "./hero/icons8-key-security-50.png";
 import iconShield from "./hero/icons8-security-shield-64 (1).png";
@@ -27,7 +27,10 @@ import deutscheBankLogo from "./hero/deutscheBank-logo.png";
 //About section assets
 import curve1 from "./about/curve-1.svg";
 import curve2 from "./about/curve-2.svg";
-import execMember from "./about/exec-member.png";
+import ceo from "./about/ceo.jpg";
+import cfo from "./about/cfo.jpg";
+import legal from "./about/legal.jpg";
+import cto from "./about/cto.jpg";
 import check from "./about/check.svg";
 
 //Our Work section assets
@@ -84,7 +87,7 @@ export {
   teslaLogo,
   microsoftLogo,
   depTourismLogo,
-  accentureLogo,
+  kpmgLogo,
   freestateHealthLogo,
   deutscheBankLogo,
   iconFirewall,
@@ -101,7 +104,10 @@ export {
   robot7,
   curve1,
   curve2,
-  execMember,
+  cto,
+  ceo,
+  legal,
+  cfo,
   ourwork1,
   ourwork2,
   ourwork3,

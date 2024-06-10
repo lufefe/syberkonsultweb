@@ -21,6 +21,9 @@ const Blog = () => {
 
   useEffect(() => {
     intervalRef.current = setInterval(handleCountdown, 1000);
+    document.title = "SyberKonsult | Blog";
+
+    
 
     return () => clearInterval(intervalRef.current || undefined);
   }, []);

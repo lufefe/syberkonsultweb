@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
-const careers = () => {
+
+
+const Careers = () => {
+
+  useEffect(() => {
+    document.title = "SyberKonsult | Careers";
+  });
+  
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -62,7 +69,7 @@ const careers = () => {
   );
 };
 
-export default careers;
+export default Careers;
 
 const BounceCard = ({ className, children }) => {
   return (

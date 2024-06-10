@@ -2,21 +2,20 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
 const PageNotFound = () => {
-
   useEffect(() => {
     document.title = "Page Not Found :(";
   });
 
   return (
-      <motion.div
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       className="relative overflow-hidden"
-      >
+    >
       <Content />
       <FuzzyOverlay />
-      </motion.div>
+    </motion.div>
   );
 };
 
