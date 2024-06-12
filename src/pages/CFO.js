@@ -14,7 +14,7 @@ const CFO = () => {
     setPath(progress);
     window.scrollTo(0, 0)
 
-  }, []);
+  },);
 
   const setPath = (progress) => {
     const width = window.innerWidth * 0.7;

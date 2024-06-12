@@ -54,7 +54,7 @@ const ContactUs = () => {
         if (res.success && res.score > 0.7) {
           // send email;
           console.log("result", res);
-          // sendEmail();
+          sendEmail();
         } else {
           //reCaptcha couldn't verify
           alert("Could not verify reCAPTCHA!, Please try again.");
@@ -84,8 +84,8 @@ const ContactUs = () => {
         }
       );
 
-    // reset();
-    // clearErrors();
+    reset();
+    clearErrors();
   };
 
   return (
@@ -183,7 +183,7 @@ const ContactUs = () => {
                       placeholder="********@*****.**"
                       {...register("email", {
                         required: true,
-                        pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g,
+                        pattern: /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g,
                       })}
                       aria-invalid={errors.email ? "true" : "false"}
                     />
@@ -210,7 +210,7 @@ const ContactUs = () => {
                       {...register("website", {
                         required: false,
                         pattern:
-                          /[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g,
+                          /[(http(s)?)://(www.)?a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/g,
                       })}
                     />
                     {errors.website && (
@@ -267,7 +267,7 @@ const ContactUs = () => {
                     </div>
                     <button
                       className="shadow bg-indigo-800 hover:bg-indigo-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded transition ease-in-out delay-150 hover:-translate-y-0.7 hover:scale-110 duration-300 flex"
-                      type="submit"
+                      type="button" //todo: change to "submit" after reCaptcha live deploy
                       disabled={isLoading}
                       id="recaptcha-key"
                     >
