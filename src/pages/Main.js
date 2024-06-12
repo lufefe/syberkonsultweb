@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const Main = () => {
   useEffect(() => {
-    document.title = "SyberKonsult | Security, Intelligence, Governance";
+    document.title = "SyberKonsult | Security. Intelligence. Governance.";
   });
   
   return (
