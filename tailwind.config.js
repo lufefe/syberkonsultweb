@@ -40,9 +40,9 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["var(--font-sora)", ...fontFamily.sans],
-        code: "var(--font-code)",
         grotesk: "var(--font-grotesk)",
+        montserrat: "var(--font-montserrat)",
+        opensans: "var(--font-opensans)",
       },
       letterSpacing: {
         tagline: ".15em",
@@ -127,10 +127,10 @@ export default {
             {},
         },
         ".quote": {
-          "@apply font-code text-lg leading-normal": {},
+          "@apply font-opensans text-lg leading-normal": {},
         },
         ".button": {
-          "@apply font-code text-xs font-bold uppercase tracking-wider": {},
+          "@apply font-opensans text-xs font-bold uppercase tracking-wider": {},
         },
       });
       addUtilities({
