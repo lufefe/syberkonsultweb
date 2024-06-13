@@ -49,6 +49,7 @@ const ContactUs = () => {
   const verifyToken = (token) => {
     // call a backend API to verify reCAPTCHA response
     fetch("https://p4i378o0nk.execute-api.eu-north-1.amazonaws.com/initial/recaptcha-google-syberkonsult/verify", {
+      mode:"cors",
       method: "POST",
       headers: {
         "Content-Type": "application/json",
