@@ -22,11 +22,17 @@ const ContactUs = () => {
     formState: { errors },
     reset,
     clearErrors,
-  } = useForm({ mode: "onTouched", defaultValues: { newscheck: true } });
+  } = useForm({
+    mode: "onTouched",
+    defaultValues: {
+      newscheck: true,
+    },
+  });
   const [isLoading, setIsLoading] = useState(false);
   const [isSent, setIsSent] = useState(false);
 
   const onSubmit = () => {
+    setIsLoading(true);
     window.grecaptcha.ready(function () {
       window.grecaptcha
         .execute("6LffKPApAAAAAOjoHmF6COmeya_LzAZ6mtUQhr6z", {
@@ -34,6 +40,7 @@ const ContactUs = () => {
         })
         .then(function (token) {
           // Add your logic to submit to your backend server here.
+          console.log("token", token);
           verifyToken(token);
         });
     });
@@ -41,7 +48,7 @@ const ContactUs = () => {
 
   const verifyToken = (token) => {
     // call a backend API to verify reCAPTCHA response
-    fetch("https://localhost:8000/verify", {
+    fetch("https://p4i378o0nk.execute-api.eu-north-1.amazonaws.com/initial/recaptcha-google-syberkonsult/verify", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -58,12 +65,12 @@ const ContactUs = () => {
         } else {
           //reCaptcha couldn't verify
           alert("Could not verify reCAPTCHA!, Please try again.");
+          setIsLoading(false)
         }
       });
   };
 
   const sendEmail = (data) => {
-    setIsLoading(true);
     emailjs
       .sendForm("service_nxaed11", "template_juxwvh7", form.current, {
         publicKey: "LGrlv2ne2fUbP9CaW",
@@ -76,7 +83,7 @@ const ContactUs = () => {
           setIsLoading(false);
         },
         (error) => {
-          // console.log("FAILED...", error.text);
+          console.log("FAILED...", error.text);
           setIsSent(false);
           setIsOpen(true);
           disablePageScroll();
@@ -267,7 +274,7 @@ const ContactUs = () => {
                     </div>
                     <button
                       className="shadow bg-indigo-800 hover:bg-indigo-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded transition ease-in-out delay-150 hover:-translate-y-0.7 hover:scale-110 duration-300 flex"
-                      type="button" //todo: change to "submit" after reCaptcha live deploy
+                      type="submit" //todo: change to "submit" after reCaptcha live deploy
                       disabled={isLoading}
                       id="recaptcha-key"
                     >
