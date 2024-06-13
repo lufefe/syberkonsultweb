@@ -56,6 +56,7 @@ const ContactUs = () => {
         "Access-Control-Allow-Origin": "*"
       },
       body: JSON.stringify({ "g-recaptcha-response": token }),
+      
     })
       .then((res) => res.json())
       .then((res) => {
@@ -70,6 +71,7 @@ const ContactUs = () => {
           setIsLoading(false)
         }
       });
+    setIsLoading(true);
   };
 
   const sendEmail = (data) => {
