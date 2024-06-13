@@ -49,11 +49,14 @@ const ContactUs = () => {
   const verifyToken = (token) => {
     // call a backend API to verify reCAPTCHA response
     fetch("https://p4i378o0nk.execute-api.eu-north-1.amazonaws.com/initial/recaptcha-google-syberkonsult/verify", {
+      mode:"cors",
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*"
       },
       body: JSON.stringify({ "g-recaptcha-response": token }),
+      
     })
       .then((res) => res.json())
       .then((res) => {
@@ -68,6 +71,7 @@ const ContactUs = () => {
           setIsLoading(false)
         }
       });
+    setIsLoading(true);
   };
 
   const sendEmail = (data) => {
