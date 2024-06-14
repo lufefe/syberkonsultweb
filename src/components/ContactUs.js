@@ -40,7 +40,6 @@ const ContactUs = () => {
         })
         .then(function (token) {
           // Add your logic to submit to your backend server here.
-          console.log("token", token);
           verifyToken(token);
         });
     });
@@ -49,7 +48,6 @@ const ContactUs = () => {
   const verifyToken = (token) => {
     // call a backend API to verify reCAPTCHA response
     fetch("https://syberkonsultweb-nodeserver.onrender.com/verify", {
-      mode:"cors",
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -62,7 +60,6 @@ const ContactUs = () => {
         // Check reCaptcha status and score
         if (res.success && res.score > 0.7) {
           // send email;
-          console.log("result", res);
           sendEmail();
         } else {
           //reCaptcha couldn't verify
@@ -75,8 +72,8 @@ const ContactUs = () => {
 
   const sendEmail = (data) => {
     emailjs
-      .sendForm("service_nxaed11", "template_juxwvh7", form.current, {
-        publicKey: "LGrlv2ne2fUbP9CaW",
+      .sendForm("service_5qw3n2x", "template_mmtmj3c", form.current, {
+        publicKey: "pAAv9gpbwtn1pj0iJ",
       })
       .then(
         () => {
@@ -86,7 +83,6 @@ const ContactUs = () => {
           setIsLoading(false);
         },
         (error) => {
-          console.log("FAILED...", error.text);
           setIsSent(false);
           setIsOpen(true);
           disablePageScroll();
