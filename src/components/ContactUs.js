@@ -73,7 +73,7 @@ const ContactUs = () => {
   const sendEmail = (data) => {
     emailjs
       .sendForm("service_5qw3n2x", "template_mmtmj3c", form.current, {
-        publicKey: "pAAv9gpbwtn1pj0iJ",
+        publicKey: "VBai9QxVrIKJo5wqB",
       })
       .then(
         () => {
