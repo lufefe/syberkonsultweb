@@ -185,8 +185,8 @@ export const ceoProfile = [
     id:"ceo",
     name:"Ayabonga Jumba",
     title:"Chief Executive Officer",
-    text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a nulla a leo iaculis pulvinar. Mauris et accumsan orci. Vivamus ullamcorper blandit lectus, a ullamcorper nulla molestie at. Ut tellus purus, vestibulum ut leo quis, viverra interdum turpis. Nullam nec tristique velit. Phasellus in sem vel mauris pretium mattis. Sed non sollicitudin sem, ac ullamcorper dolor. Duis consequat elementum ullamcorper. Duis porttitor risus ultricies sodales malesuada. Donec vitae ex magna. Suspendisse hendrerit est nec felis suscipit condimentum. Donec pellentesque sed tellus imperdiet porta. Nulla vestibulum metus mauris, at efficitur nunc auctor vel. Nullam elementum eget risus eu eleifend.",
-    keyAreas:["Strategy", "Risk", "Governance", "Global Expansion", "Acquisitions"]
+    text:"Having graduated as a Software Engineer, Ayabonga started a career at a big four audit firm as an IT Auditor where he gained experience in IT Governance and Information Security. During his tenure as an IT auditor, Ayabonga grabbed an opportunity to work abroad as a Senior Associate in New York, US. In the Big Apple, Ayabonga assimilated the ins-and-outs of the high-pressure corporate world and further expanded his expertise in audit, corporate governance, IT security and assurance as well as leadership and relationship management. Ayabonga then branched out to specialize in IT Risk at a JSE-listed financial company where he focused on risk management, compliance and overall cybersecurity posture. As the Founder and CEO at SyberKonsult, Ayabonga drives the strategic initiative to catapult the firm to new heights and expand it to be a key player in the cybersecurity market.",
+    keyAreas:["Strategy", "Risk", "Governance", "Cybersecurity", "Global Expansion"]
   },
 ]
 
@@ -268,27 +268,28 @@ export const services = [
 export const socials = [
   {
     id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
+    title: "Instagram",
+    iconUrl: instagram,
+    url: "https://instagram.com/syberkonsult",
   },
   {
     id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
+    title: "Discord",
+    iconUrl: discordBlack,
+    url: "https://instagram.com/syberkonsult",
   },
   {
     id: "2",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
+    title: "Twitter",
+    iconUrl: twitter,
+    url: "https://instagram.com/syberkonsult",
   },
+
   {
     id: "3",
     title: "Facebook",
     iconUrl: facebook,
-    url: "#",
+    url: "https://instagram.com/syberkonsult",
   },
 ];
 
