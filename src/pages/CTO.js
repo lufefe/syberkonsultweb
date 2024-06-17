@@ -67,7 +67,7 @@ const CTO = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="min-h-screen w-[100vw] px-6 pb-8 flex items-center justify-center bg-black text-white sm:flex-wrap"
+      className="min-h-screen w-[100vw] px-6 py-8 flex items-center justify-center bg-black text-white sm:flex-wrap"
     >
       <div className="relative flex mr-5 p-4 w-[auto]">
         <img src={cto} alt="executive" width={350} height={350}/>

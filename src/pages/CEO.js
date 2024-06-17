@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { ceoProfile } from "../constants";
-import ceo from "../assets/about/ceo.jpg";
+import ceo from "../assets/about/ceo-alj.jpg";
 
 const CEO = () => {
   const path = useRef(null);
@@ -66,7 +66,7 @@ const CEO = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="min-h-screen w-[100vw] px-6 pb-8 flex items-center justify-center bg-black text-white sm:flex-wrap"
+      className="min-h-screen w-[100vw] px-6 py-8 flex items-center justify-center bg-black text-white sm:flex-wrap"
     >
       <div className="relative flex mr-5 p-4 w-[auto]">
         <img src={ceo} alt="executive" width={350} height={350} />
@@ -102,11 +102,11 @@ const CEO = () => {
               <p className="font-bold text-base m-0 mr-3 sm:flex-wrap sm:mb-2">
                 {profile.title}
               </p>
-              <p className="text-lg w-[700px] ml-7 sm:m-0">{profile.text}</p>
+              <p className="text-lg w-[750px] ml-7 sm:m-0">{profile.text}</p>
             </div>
             <div className="flex justify-end mt-12 sm:flex-wrap sm:justify-center">
               {/* .tagsContainer */}
-              <p className="m-0 font-bold sm:mb-3">Key Areas</p>
+              <p className="m-0 font-bold pt-2 sm:mb-3">Key Areas</p>
               <div className="flex w-[700px] ml-7 flex-wrap gap-2 ">
                 {/* .tags */}
                 {profile.keyAreas.map((value) => (

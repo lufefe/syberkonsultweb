@@ -6,7 +6,7 @@ import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/customsvg/MenuSvg";
 import { HamburgerMenu } from "./design/NavBarDesign";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
@@ -71,10 +71,7 @@ const Header = () => {
           <HamburgerMenu />
         </nav>
         <Link to="/ourstory">
-
-        <Button className="hidden lg:flex" >
-         Our Story
-        </Button>
+          <Button className="hidden lg:flex">Our Story</Button>
         </Link>
 
         <Button
