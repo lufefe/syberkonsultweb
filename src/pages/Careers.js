@@ -7,6 +7,7 @@ const Careers = () => {
 
   useEffect(() => {
     document.title = "SyberKonsult | Careers";
+    window.scrollTo(0, 0);
   });
   
   return (

@@ -59,7 +59,7 @@ const About = () => {
                   >
                     <Link to={member.url}>
                       <img
-                        className="m-auto rounded-xl"
+                        className="m-auto rounded-xl hover:-translate-y-1 hover:scale-110 transition duration-300 ease-in-out delay-150"
                         width={member.width}
                         height={member.height}
                         alt={member.title}

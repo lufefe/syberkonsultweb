@@ -39,27 +39,32 @@ import {
 export const navigation = [
   {
     id: "0",
+    title: "Home",
+    url: "/#home",
+  },
+  {
+    id: "1",
     title: "Services",
     url: "/#services",
   },
   {
-    id: "1",
+    id: "2",
     title: "About",
     url: "/#about",
   },
-{
-    id: "2",
-    title: "Our Work",
-    url: "/#ourwork",
-  },
+// {
+//     id: "3",
+//     title: "Our Work",
+//     url: "/#ourwork",
+//   },
   {
-    id: "3",
+    id: "4",
     title: "Contact Us",
     url: "/#contact-us",
   },
   
   // {
-  //   id: "4",
+  //   id: "5",
   //   title: "New account",
   //   url: "#signup",
   //   onlyMobile: true,
@@ -218,33 +223,35 @@ export const counselProfile = [
   },
 ]
 
+
 export const services = [
   {
     id: "0",
-    title: "Data and Risk Management",
-    text: "SyberKonsult specialises in helping organizations embrace sound data risk management practices to help keep their data safe and that access to it is carefully controlled and auditable. ",
-    iconUrl: datariskIcon,
-    imageUrl: robot6,
-  },
-  {
-    id: "1",
     title: "Security Assessments",
     text: "The testing or evaluation of security controls to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting the security requirements.",
     iconUrl: secAssessIcon,
     imageUrl: robot6,
     light: true,
   },
+
   {
-    id: "2",
+    id: "1",
     title: "Architecture Design",
     text: "Strategic design of systems, policies and technologies to protect IT and business assets from cyberthreats. A well-designed security architecture aligns cybersecurity with the unique business goals and risk management profile of the organization.",
     iconUrl: secDesignIcon,
     imageUrl: robot6,
   },
   {
+    id: "2",
+    title: "Cybersecurity Analytics",
+    text: "Aggregating data for the purpose of collecting evidence, building timelines, and analyzing capabilities to perform and design a proactive cybersecurity strategy that detects, analyzes, and mitigates cyberthreats. ",
+    iconUrl: datariskIcon,
+    imageUrl: robot6,
+  },
+  {
     id: "3",
-    title: "Solutions Implementations",
-    text: "Choosing the most effective and suitable security solutions to strengthen the security of a network. Implementing security products and optimizing the configuration to work properly requires a sophisticated level of security expertise",
+    title: "Solution Implementation",
+    text: "Choosing the most effective and suitable security solutions to strengthen the security of a network. Implementing security products and optimizing the configuration to work properly requires a sophisticated level of security expertise.",
     iconUrl: solImpleIcon,
     imageUrl: robot6,
     light: true,
@@ -258,8 +265,8 @@ export const services = [
   },
   {
     id: "5",
-    title: "Audit and Review",
-    text: "To assist clients by providing independent risk- and compliance-based audit assessments of their compliance with security objectives, policies, standards and processes such as Security Policy Framework, Cyber Security Strategy, Maturity Models, and relevant regulations",
+    title: "Data and Risk Management",
+    text: "Helping organizations embrace sound data risk management practices to help keep their data safe and that access to it is carefully controlled and auditable. It involves the policies, procedures and processes that ensure data is accurate, consistent, available, and secure.",
     iconUrl: auditIcon,
     imageUrl: robot6,
   },
