@@ -1,7 +1,6 @@
 import { services } from "../constants";
 import Heading from "./Heading";
 import Section from "./Section";
-import Arrow from "../assets/customsvg/Arrow";
 import { GradientLight } from "./design/ServicesDesign";
 import ClipPath from "../assets/customsvg/ClipPath";
 import { Link } from "react-router-dom";

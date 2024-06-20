@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import About from "../components/About";
-import OurWork from "../components/OurWork";
 import ContactUs from "../components/ContactUs";
 import { motion } from "framer-motion";
 
@@ -20,7 +19,6 @@ const Main = () => {
       <Hero />
       <Services />
       <About />
-      {/* <OurWork /> */}
       <ContactUs />
     </motion.div>
   );
