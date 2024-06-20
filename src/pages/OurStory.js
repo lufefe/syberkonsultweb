@@ -27,6 +27,7 @@ import {
 const OurStory = () => {
   useEffect(() => {
     document.title = "SyberKonsult | Our Story";
+    window.scrollTo(0, 0);
   });
 
   return (
@@ -35,7 +36,7 @@ const OurStory = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="relative z-1 max-w-[98%] mx-auto text-center mb-[4rem] md:mb-20 lg:mb:[6rem]"
+        className="relative z-1 max-w-[full] mx-auto text-center mb-[4rem] md:mb-20 lg:mb:[6rem]"
       >
         <Canvas
           camera={{

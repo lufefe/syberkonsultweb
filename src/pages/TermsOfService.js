@@ -6,6 +6,7 @@ import Section from "../components/Section";
 const TermsOfService = () => {
   useEffect(() => {
     document.title = "SyberKonsult | Terms of Service";
+    window.scrollTo(0, 0);
   });
 
   return (

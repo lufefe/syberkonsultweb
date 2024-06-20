@@ -13,7 +13,6 @@ const CFO = () => {
   useEffect(() => {
     setPath(progress);
     window.scrollTo(0, 0)
-
   },);
 
   const setPath = (progress) => {

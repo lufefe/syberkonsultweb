@@ -9,6 +9,7 @@ const PrivacyPolicy = () => {
 
     useEffect(() => {
     document.title = "SyberKonsult | Privacy Policy";
+    window.scrollTo(0, 0);
   });
 
     

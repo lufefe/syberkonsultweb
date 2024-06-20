@@ -20,7 +20,7 @@ const Main = () => {
       <Hero />
       <Services />
       <About />
-      <OurWork />
+      {/* <OurWork /> */}
       <ContactUs />
     </motion.div>
   );
