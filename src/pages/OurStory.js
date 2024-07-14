@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion, useAnimate } from "framer-motion";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
-import { pointsInner, pointsOuter } from "../components/utils";
+import { pointsInner, pointsOuter } from "../utils/utils";
 import Character from "../components/design/Character";
 import { paragraph } from "../constants";
 import {

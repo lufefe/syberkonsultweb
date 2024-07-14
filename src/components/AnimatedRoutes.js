@@ -12,6 +12,7 @@ import {
   CTO,
   Counsel,
   PageNotFound,
+  BlogDetail
 } from "../pages";
 import { AnimatePresence } from "framer-motion";
 
@@ -27,6 +28,7 @@ const AnimatedRoutes = () => {
         <Route path="/termsofservice" element={<TermsOfService />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blogdetail/:id" element={<BlogDetail />} />
         <Route path="/ceo" element={<CEO />} />
         <Route path="/cfo" element={<CFO />} />
         <Route path="/cto" element={<CTO />} />
