@@ -43,7 +43,7 @@ const options = {
         );
       }
 
-      return <p className="text-base">{children}</p>;
+      return <p className="text-lg">{children}</p>;
     },
     [BLOCKS.HEADING_1]: (node, children) => <h1 className="h1">{children}</h1>,
     [BLOCKS.HEADING_2]: (node, children) => <h2 className="h2">{children}</h2>,
@@ -97,18 +97,18 @@ const options = {
 
     [BLOCKS.EMBEDDED_RESOURCE]: (node, children) => <div>{children}</div>,
     [BLOCKS.UL_LIST]: (node, children) => (
-      <ul className="list-disc ">{children}</ul>
+      <ul className="list-disc ml-6">{children}</ul>
     ),
 
     [BLOCKS.OL_LIST]: (node, children) => (
-      <ol className="list-decimal ">{children}</ol>
+      <ol className="list-decimal ml-6">{children}</ol>
     ),
 
     [BLOCKS.LIST_ITEM]: (node, children) => (
-      <li className="indent-3">{children}</li>
+      <li>{children}</li>
     ),
     [BLOCKS.QUOTE]: (node, children) => <blockquote>{children}</blockquote>,
-    [BLOCKS.HR]: () => <hr />,
+    [BLOCKS.HR]: () => <hr className="my-1" />,
 
     [BLOCKS.TABLE]: (node, children) => (
       <table className="table-auto border border-white rounded border-collapse">
@@ -151,12 +151,12 @@ const options = {
         return (
           <a
             href={`/blogdetail/${node.data.target.fields.slug}`}
-            className="flex flex-row text-start bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 hover:border-gray-600 w-fit"
+            className="flex flex-row text-start bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 hover:border-gray-600  mb-2"
             target="_blank"
             rel="noopener noreferrer"
           >
             <div
-              class="block rounded-lg bg-cover p-3 shadow-lg dark:bg-neutral-700 bg-blend-overlay bg-no-repeat bg-center"
+              class="block rounded-lg p-3 shadow-lg dark:bg-neutral-700 bg-blend-overlay bg-cover bg-no-repeat bg-center w-[100vw]"
               style={{
                 backgroundImage: `url('${node.data.target.fields.coverImage.fields.file.url}')`,
               }}
