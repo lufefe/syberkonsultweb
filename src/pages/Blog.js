@@ -14,7 +14,7 @@ const Blog = () => {
   useEffect(() => {
     const getAllPosts = async () => {
       try {
-        await client.getEntries({ content_type: "post", order: ['-fields.featured', '-sys.createdAt'] }).then((response) => {
+        await client.getEntries({ content_type: "post", order: ['-fields.featured', '-fields.date'] }).then((response) => {
           setBlogPosts(response.items);
         });
       } catch (error) {
