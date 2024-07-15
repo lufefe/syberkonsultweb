@@ -1,11 +1,7 @@
 import {
-  Block,
   BLOCKS,
-  Document,
-  Inline,
   INLINES,
   MARKS,
-  Text,
 } from "@contentful/rich-text-types";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import ContentfulImage from "../utils/blogUtils";
