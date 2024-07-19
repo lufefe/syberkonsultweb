@@ -16,8 +16,8 @@ import {
   discordBlack,
   facebook,
   instagram,
-  notification2,
-  notification3,
+  // notification2,
+  // notification3,
   notification4,
   ourwork1,
   ourwork2,
@@ -73,7 +73,7 @@ export const navigation = [
 
 export const heroIcons = [iconFirewall, iconKey, iconPass, iconShield];
 
-export const notificationImages = [notification4, notification3, notification2];
+export const notificationImages = [notification4];
 
 export const companyLogos = [depTourismLogo, kpmgLogo, microsoftLogo, isoLogo, teslaLogo, deutscheBankLogo, freestateHealthLogo];
 
@@ -265,8 +265,8 @@ export const services = [
   },
   {
     id: "5",
-    title: "Data and Risk Management",
-    text: "Helping organizations embrace sound data risk management practices to help keep their data safe and that access to it is carefully controlled and auditable. It involves the policies, procedures and processes that ensure data is accurate, consistent, available, and secure.",
+    title: "Risk Management",
+    text: "Helping organizations embrace sound risk management practices to help keep their data safe and that access to it is carefully controlled and auditable. It involves the policies, procedures and processes that ensure data is accurate, consistent, available, and secure.",
     iconUrl: auditIcon,
     imageUrl: robot6,
   },
