@@ -16,6 +16,8 @@ import emailjs from "@emailjs/browser";
 const ContactUs = () => {
   const form = useRef();
   const [isOpen, setIsOpen] = useState(false);
+  const [isMapLoading, setIsMapLoading] = useState(true);
+
   const {
     register,
     handleSubmit,
@@ -30,6 +32,12 @@ const ContactUs = () => {
   });
   const [isLoading, setIsLoading] = useState(false);
   const [isSent, setIsSent] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsMapLoading(false);
+    }, 1000);
+  }, []);
 
   const onSubmit = () => {
     setIsLoading(true);
@@ -53,7 +61,6 @@ const ContactUs = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ "g-recaptcha-response": token }),
-      
     })
       .then((res) => res.json())
       .then((res) => {
@@ -64,7 +71,7 @@ const ContactUs = () => {
         } else {
           //reCaptcha couldn't verify
           alert("Could not verify reCAPTCHA!, Please try again.");
-          setIsLoading(false)
+          setIsLoading(false);
         }
       });
     setIsLoading(true);
@@ -346,17 +353,22 @@ const ContactUs = () => {
 
             {/* Map right hand side */}
             <div className="relative min-h-[39rem] border border-n-1/10 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
-              <iframe
-                title="SyberKonsult Office"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.0851060846935!2d28.052090300000003!3d-26.096140400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95733b19c478ef%3A0xb30e57e2cf5e82d5!2sSunset%20Towers%2C%20Benmore%20Rd%2C%20Morningside%2C%20Sandton%2C%202057%2C%20South%20Africa!5e0!3m2!1sen!2suk!4v1716936832575!5m2!1sen!2suk"
-                className="w-full h-full rounded-3xl overflow-hidden lg:min-h-[46rem]"
-                allowfullscreen=""
-                referrerpolicy="no-referrer-when-downgrade"
-                frameborder="0"
-                aria-hidden="false"
-                tabindex="0"
-                style={{ filter: "invert(90%)" }}
-              />
+              {isMapLoading ? (
+                <MapSkeleton />
+              ) : (
+                <iframe
+                  title="SyberKonsult Office"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.0851060846935!2d28.052090300000003!3d-26.096140400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95733b19c478ef%3A0xb30e57e2cf5e82d5!2sSunset%20Towers%2C%20Benmore%20Rd%2C%20Morningside%2C%20Sandton%2C%202057%2C%20South%20Africa!5e0!3m2!1sen!2suk!4v1716936832575!5m2!1sen!2suk"
+                  className="w-full h-full rounded-3xl overflow-hidden lg:min-h-[46rem]"
+                  allowfullscreen=""
+                  referrerpolicy="no-referrer-when-downgrade"
+                  frameborder="0"
+                  aria-hidden="false"
+                  tabindex="0"
+                  loading="eager"
+                  style={{ filter: "invert(90%)" }}
+                />
+              )}
             </div>
           </div>
 
@@ -502,5 +514,22 @@ const Text = ({ children }) => {
         </span>
       ))}
     </>
+  );
+};
+
+const MapSkeleton = () => {
+  return (
+    <div
+      role="status"
+      class="flex items-center justify-center h-full bg-gray-300 rounded-lg animate-pulse dark:bg-gray-200"
+    >
+    <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+    <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px] mb-2.5"></div>
+    <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+    <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[330px] mb-2.5"></div>
+    <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[300px] mb-2.5"></div>
+    <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px]"></div>
+    <span class="sr-only">Loading...</span>
+    </div>
   );
 };
