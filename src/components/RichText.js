@@ -1,8 +1,4 @@
-import {
-  BLOCKS,
-  INLINES,
-  MARKS,
-} from "@contentful/rich-text-types";
+import { BLOCKS, INLINES, MARKS } from "@contentful/rich-text-types";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import ContentfulImage from "../utils/blogUtils";
 
@@ -100,10 +96,15 @@ const options = {
       <ol className="list-decimal ml-6">{children}</ol>
     ),
 
-    [BLOCKS.LIST_ITEM]: (node, children) => (
-      <li>{children}</li>
-    ),
-    [BLOCKS.QUOTE]: (node, children) => <blockquote>{children}</blockquote>,
+    [BLOCKS.LIST_ITEM]: (node, children) => <li>{children}</li>,
+    [BLOCKS.QUOTE]: (node, children) => {
+      <blockquote class="p-4 my-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800">
+        <p className="text-xl italic font-medium leading-relaxed text-gray-200 dark:text-white">
+          {" "}
+          {children}
+        </p>
+      </blockquote>;
+    },
     [BLOCKS.HR]: () => <hr className="my-1" />,
 
     [BLOCKS.TABLE]: (node, children) => (
