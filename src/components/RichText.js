@@ -63,18 +63,18 @@ const options = {
             rel="noopener noreferrer"
           >
             <div
-              class="block rounded-lg bg-cover p-6 shadow-lg dark:bg-neutral-700 bg-blend-overlay bg-no-repeat bg-center"
+              className="block rounded-lg bg-cover p-6 shadow-lg dark:bg-neutral-700 bg-blend-overlay bg-no-repeat bg-center"
               style={{
                 backgroundImage: `url('${node.data.target.fields.coverImage.fields.file.url}')`,
               }}
             >
-              <h5 class="h5 mb-2 leading-tight text-white dark:text-neutral-50">
+              <h5 className="h5 mb-2 leading-tight text-white dark:text-neutral-50">
                 {node.data.target.fields.title}
               </h5>
-              <p class="mb-4 text-base text-white  dark:text-neutral-200">
+              <p className="mb-4 text-base text-white  dark:text-neutral-200">
                 {node.data.target.fields.excerpt}
               </p>
-              <p class="text-sm text-gray-400 truncate dark:text-gray-400">
+              <p className="text-sm text-gray-400 truncate dark:text-gray-400">
                 {new Intl.DateTimeFormat("en-GB", {
                   month: "long",
                   day: "2-digit",
@@ -97,14 +97,7 @@ const options = {
     ),
 
     [BLOCKS.LIST_ITEM]: (node, children) => <li>{children}</li>,
-    [BLOCKS.QUOTE]: (node, children) => {
-      <blockquote class="p-4 my-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800">
-        <p className="text-xl italic font-medium leading-relaxed text-gray-200 dark:text-white">
-          {" "}
-          {children}
-        </p>
-      </blockquote>;
-    },
+    [BLOCKS.QUOTE]: (node, children) => <blockquote className="p-4 my-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800">{children}</blockquote>,
     [BLOCKS.HR]: () => <hr className="my-1" />,
 
     [BLOCKS.TABLE]: (node, children) => (
@@ -153,12 +146,12 @@ const options = {
             rel="noopener noreferrer"
           >
             <div
-              class="block rounded-lg p-3 shadow-lg dark:bg-neutral-700 bg-blend-overlay bg-cover bg-no-repeat bg-center w-[100vw]"
+              className="block rounded-lg p-3 shadow-lg dark:bg-neutral-700 bg-blend-overlay bg-cover bg-no-repeat bg-center w-[100vw]"
               style={{
                 backgroundImage: `url('${node.data.target.fields.coverImage.fields.file.url}')`,
               }}
             >
-              <span class="flex-1 whitespace-nowrap">
+              <span className="flex-1 whitespace-nowrap">
                 {node.data.target.fields.title}
               </span>
             </div>
