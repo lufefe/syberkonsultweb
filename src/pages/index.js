@@ -9,7 +9,6 @@ import CEO from "./CEO";
 import CFO from "./CFO"
 import CTO from "./CTO"
 import Counsel from "./Counsel"
-import BlogList from "./BlogList"
 import BlogDetail from "./BlogDetail"
 
-export {Main, Blog, OurStory, Careers, PageNotFound, PrivacyPolicy, TermsOfService, CEO, CFO, CTO, Counsel, BlogList, BlogDetail}
+export {Main, Blog, OurStory, Careers, PageNotFound, PrivacyPolicy, TermsOfService, CEO, CFO, CTO, Counsel, BlogDetail}

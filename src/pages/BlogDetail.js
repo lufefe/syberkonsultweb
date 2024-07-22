@@ -4,6 +4,7 @@ import { client } from "../utils/blogUtils";
 import { motion } from "framer-motion";
 import RichText from "../components/RichText";
 import ProgressBar from "../components/design/ProgressBar";
+import { Helmet } from "react-helmet-async";
 
 const BlogDetail = () => {
   const [loading, setLoading] = useState(true);
@@ -29,6 +30,12 @@ const BlogDetail = () => {
   }, [id]);
 
   return (
+    <>
+       <Helmet>
+      <title>{`SyberBlog | ${singleBlogPost?.fields?.title}`}</title>
+      <meta name="description" content={`SyberBlog | ${singleBlogPost?.fields?.title}`}/>
+      <link rel="canonical" href={`/${singleBlogPost?.fields?.slug}`} />
+    </Helmet>
     <motion.main
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -148,6 +155,7 @@ const BlogDetail = () => {
         </article>
       </div>
     </motion.main>
+    </>
   );
 };
 

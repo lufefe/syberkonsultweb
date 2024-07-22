@@ -1,22 +1,32 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 
 const PageNotFound = () => {
   useEffect(() => {
-    document.title = "Page Not Found :(";
     window.scrollTo(0, 0);
   });
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className="relative overflow-hidden"
-    >
-      <Content />
-      <FuzzyOverlay />
-    </motion.div>
+    <>
+      <Helmet>
+        <title>Page Not Found</title>
+        <meta
+          name="description"
+          content="Page not found. Click the button to return home."
+        />
+        <link rel="canonical" href="/*" />
+      </Helmet>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="relative overflow-hidden"
+      >
+        <Content />
+        <FuzzyOverlay />
+      </motion.div>
+    </>
   );
 };
 

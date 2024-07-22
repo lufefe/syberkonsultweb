@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { ctoProfile } from "../constants";
 import cto from "../assets/about/cto.jpg"
+import { Helmet } from "react-helmet-async";
 
 const CTO = () => {
   const path = useRef(null);
@@ -63,6 +64,12 @@ const CTO = () => {
     progress = 0;
   };
   return (
+    <>
+     <Helmet>
+      <title>SyberKonsult | CTO</title>
+      <meta name="description" content="SyberKonsult | Profile of our Chief Technology Officer"/>
+      <link rel="canonical" href="/CTO" />
+    </Helmet>
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -124,6 +131,7 @@ const CTO = () => {
         </>
       ))}
     </motion.div>
+    </>
   );
 };
 
