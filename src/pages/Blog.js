@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { client } from "../utils/blogUtils";
+import { Helmet } from "react-helmet-async";
 
 const Blog = () => {
   const [visible, setVisible] = useState(7);
@@ -32,6 +33,12 @@ const Blog = () => {
     getAllPosts();
   }, []);
   return (
+    <>
+    <Helmet>
+      <title>SyberBlog</title>
+      <meta name="description" content="Your Go-To Source for Cybersecurity Insights"/>
+      <link rel="canonical" href="/blog" />
+    </Helmet>
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -138,6 +145,7 @@ const Blog = () => {
     </div>
 </div> */}
     </motion.div>
+    </>
   );
 };
 

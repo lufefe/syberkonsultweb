@@ -23,15 +23,23 @@ import {
   pic15,
   pic16,
 } from "../assets";
+import { Helmet } from "react-helmet-async";
 
 const OurStory = () => {
   useEffect(() => {
-    document.title = "SyberKonsult | Our Story";
     window.scrollTo(0, 0);
   });
 
   return (
     <>
+      <Helmet>
+        <title>SyberKonsult | Our Story</title>
+        <meta
+          name="description"
+          content="The story behind the SyberKonsult company."
+        />
+        <link rel="canonical" href="/ourstory" />
+      </Helmet>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -67,7 +75,7 @@ const OurStory = () => {
         <Character paragraph={paragraph} />
         <br />
       </motion.div>
-{/* 
+      {/* 
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

@@ -1,16 +1,22 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 
 
 
 const Careers = () => {
 
   useEffect(() => {
-    document.title = "SyberKonsult | Careers";
     window.scrollTo(0, 0);
   });
   
   return (
+    <>
+       <Helmet>
+      <title>SyberKonsult | Careers</title>
+      <meta name="description" content="SyberKonsult | Our career opportunities listing"/>
+      <link rel="canonical" href="/careers" />
+    </Helmet>
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -67,6 +73,7 @@ const Careers = () => {
         </BounceCard>
       </div>
     </motion.section>
+    </>
   );
 };
 

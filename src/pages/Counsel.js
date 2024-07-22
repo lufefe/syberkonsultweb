@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { counselProfile } from "../constants";
 import counsel from "../assets/about/legal.jpg"
+import { Helmet } from "react-helmet-async";
 
 const Counsel = () => {
   const path = useRef(null);
@@ -62,6 +63,12 @@ const Counsel = () => {
     progress = 0;
   };
   return (
+    <>
+       <Helmet>
+      <title>SyberKonsult | Counsel</title>
+      <meta name="description" content="SyberKonsult | Profile of our General Counsel/Legal"/>
+      <link rel="canonical" href="/Counsel" />
+    </Helmet>
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -123,6 +130,7 @@ const Counsel = () => {
         </>
       ))}
     </motion.div>
+    </>
   );
 };
 

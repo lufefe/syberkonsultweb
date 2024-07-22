@@ -2,24 +2,33 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import ProgressBar from "../components/design/ProgressBar";
 import Section from "../components/Section";
+import { Helmet } from "react-helmet-async";
 
 const TermsOfService = () => {
   useEffect(() => {
-    document.title = "SyberKonsult | Terms of Service";
     window.scrollTo(0, 0);
   });
 
   return (
-    <Section className="overflow-hidden">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        className="relative inline-block px-10 m-5 items-center h-[100vh]"
-      >
-        <ProgressBar />
+    <>
+      <Helmet>
+        <title>SyberKonsult | Terms of Service</title>
+        <meta
+          name="description"
+          content="SyberKonsult | Please read through our terms of service"
+        />
+        <link rel="canonical" href="/termsofservice" />
+      </Helmet>
+      <Section className="overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="relative inline-block px-10 m-5 items-center h-[100vh]"
+        >
+          <ProgressBar />
 
-        <h1 className="h1 text-center mb-3">Terms of Service</h1>
+          <h1 className="h1 text-center mb-3">Terms of Service</h1>
 
           <p className="mb-5 font-light">Last updated: June 06, 2024</p>
           <p className="mb-5">
@@ -35,7 +44,9 @@ const TermsOfService = () => {
             singular or in plural.
           </p>
           <h3 className="h3 mb-2">Definitions</h3>
-          <p className="font-normal text-wrap mb-2 text-lg leading-snug">For the purposes of these Terms and Conditions:</p>
+          <p className="font-normal text-wrap mb-2 text-lg leading-snug">
+            For the purposes of these Terms and Conditions:
+          </p>
           <ul>
             <li>
               <p className="font-normal text-wrap mb-2 text-lg leading-snug">
@@ -204,7 +215,9 @@ const TermsOfService = () => {
             these states, each party's liability will be limited to the greatest
             extent permitted by law.
           </p>
-          <h2 className="h2 mb-2">&quot;AS IS&quot; and &quot;AS AVAILABLE&quot; Disclaimer</h2>
+          <h2 className="h2 mb-2">
+            &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; Disclaimer
+          </h2>
           <p className="font-normal text-wrap mb-2 text-lg leading-snug">
             The Service is provided to You &quot;AS IS&quot; and &quot;AS
             AVAILABLE&quot; and with all faults and defects without warranty of
@@ -325,8 +338,9 @@ const TermsOfService = () => {
               </a>
             </li>
           </ul>
-      </motion.div>
-    </Section>
+        </motion.div>
+      </Section>
+    </>
   );
 };
 
