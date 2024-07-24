@@ -83,6 +83,9 @@ export default {
         "benefit-card-6": "url(assets/benefits/card-6.svg)",
       },
     },
+    scale: {
+      '90': '.9',
+    }
   },
   plugins: [
     plugin(function ({ addBase, addComponents, addUtilities }) {

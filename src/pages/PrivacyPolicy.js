@@ -24,7 +24,7 @@ const PrivacyPolicy = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="relative inline-block px-10 m-5 items-center h-[100vh]"
+          className="relative inline-block lg:px-10 m-5 items-center h-[100vh]"
         >
           <ProgressBar />
           <h1 className="h1 text-center mb-3">Privacy Policy</h1>

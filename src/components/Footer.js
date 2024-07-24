@@ -16,7 +16,7 @@ const Footer = () => {
           © {new Date().getFullYear()}. SyberKonsult (Pty) Ltd.
         </p>
         {/* FOOTER LINKS */}
-        <ul className="flex gap-14 flex-wrap ">
+        <ul className="flex gap-14 flex-wrap justify-center">
           {footerlinks.map((item) => (
             <Link
               key={item.id}
@@ -29,7 +29,7 @@ const Footer = () => {
         </ul>
 
         {/* SOCIAL MEDIA ICONS */}
-        <ul className="flex gap-5 flex-wrap">
+        <ul className="flex gap-5 flex-wrap justify-center">
           {socials.map((item) => (
             <Link
               key={item.id}

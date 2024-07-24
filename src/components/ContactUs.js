@@ -114,7 +114,7 @@ const ContactUs = () => {
             <div className="relative z-1 w-full ml-auto">
               <form
                 ref={form}
-                className="p-15"
+                className="lg:p-15"
                 onSubmit={handleSubmit(onSubmit)}
                 autoComplete="off"
                 action="submit"
@@ -259,7 +259,7 @@ const ContactUs = () => {
                       </p>
                     )}
                   </div>
-                  <div className="flex justify-between w-full px-3">
+                  <div className="flex flex-wrap justify-between w-full px-3">
                     <div className="md:flex md:items-center">
                       <label
                         className="block text-n-2 font-bold"
@@ -279,7 +279,7 @@ const ContactUs = () => {
                       </label>
                     </div>
                     <button
-                      className="shadow bg-indigo-800 hover:bg-indigo-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded transition ease-in-out delay-150 hover:-translate-y-0.7 hover:scale-110 duration-300 flex"
+                      className="shadow bg-indigo-800 hover:bg-indigo-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded transition ease-in-out delay-150 hover:-translate-y-0.7 hover:scale-110 duration-300 flex mt-1"
                       type="submit" //todo: change to "submit" after reCaptcha live deploy
                       disabled={isLoading}
                       id="recaptcha-key"

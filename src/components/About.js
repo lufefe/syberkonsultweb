@@ -30,8 +30,8 @@ const About = () => {
         </div>
 
         {/* right-side collab apps - to be team section */}
-        <div className="lg:ml-auto xl:w-[38rem] mt-4">
-          <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto text-center">
+        <div className="lg:ml-auto xl:w-[38rem] mt-4 scale-90">
+          <p className="body-2 text-n-4 md:mb-14 lg:mb-20 lg:w-[22rem] lg:mx-auto text-center mb-12">
             Our Team
           </p>
 
