@@ -9,7 +9,7 @@ const Services = () => {
   return (
     <Section id="services">
       <div className="container relative z-2">
-        <Heading className="md:max-w-md lg:max-w-2xl" title="Services" />
+        <Heading className="md:max-w-md lg:max-w-2xl text-center" title="Services" />
         {/* //todo create a separate page that details each service */}
         <div className="flex flex-wrap gap-10 mb-10 justify-content: space-evenly justify-center">
           {services.map((item) => (

@@ -10,7 +10,7 @@ import CompanyLogos from "./CompanyLogos";
 const Hero = () => {
   const parallaxRef = useRef(null);
   return (
-    <Section className="pt-[12rem] -mt-[5.25]" customPaddings id="home">
+    <Section className="pt-[8rem] -mt-[5.25]" customPaddings id="home">
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb:[6rem]">
           <h1 className="h1 mb-6">
