@@ -76,7 +76,7 @@ const CEO = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="min-h-screen w-[100vw] px-6 py-8 flex items-center justify-center bg-black text-white sm:flex-wrap"
+        className="min-h-screen w-[100vw] px-6 py-8 lg:flex items-center justify-center bg-black text-white sm:flex-wrap"
       >
         <div className="relative flex mr-5 p-4 w-[auto]">
           <img src={ceo} alt="executive" width={350} height={350} />
@@ -84,9 +84,9 @@ const CEO = () => {
         {/* .container */}
         {ceoProfile.map((profile, index) => (
           <>
-            <div className="relative flex flex-col w-[65vw] mr-4 sm:m-0 sm:items-center">
+            <div className="relative lg:flex lg:flex-col lg:w-[65vw] mr-4 sm:m-0 items-center max-w-fit">
               {/* .body */}
-              <h3 className="h3">{profile.name}</h3>
+              <h3 className="h3 text-center">{profile.name}</h3>
               <div
                 onMouseEnter={() => {
                   manageMouseEnter();
@@ -97,7 +97,7 @@ const CEO = () => {
                 onMouseLeave={() => {
                   manageMouseLeave();
                 }}
-                className=" flex w-full relative z-5 h-[50px]"
+                className=" lg:flex w-full relative z-5 h-[50px] block"
               >
                 <svg className="w-full">
                   <path
@@ -107,12 +107,12 @@ const CEO = () => {
                 </svg>
               </div>{" "}
               {/* .box */}
-              <div className="flex justify-end sm:flex-wrap sm:justify-center">
+              <div className="lg:flex justify-end sm:flex-wrap sm:justify-center">
                 {/* .description */}
-                <p className="font-bold text-base m-0 mr-3 sm:flex-wrap sm:mb-2">
+                <p className="font-bold text-base m-0 mr-3 sm:flex-wrap sm:mb-2 text-center">
                   {profile.title}
                 </p>
-                <p className="text-lg w-[750px] ml-7 sm:m-0">{profile.text}</p>
+                <p className="text-lg lg:w-[750px] lg:ml-7 sm:m-0 w-full">{profile.text}</p>
               </div>
               <div className="flex justify-end mt-12 sm:flex-wrap sm:justify-center">
                 {/* .tagsContainer */}
