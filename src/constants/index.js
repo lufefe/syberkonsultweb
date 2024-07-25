@@ -289,14 +289,14 @@ export const socials = [
     id: "2",
     title: "Twitter",
     iconUrl: twitter,
-    url: "https://instagram.com/syberkonsult",
+    url: "https://x.com/syberkonsult",
   },
 
   {
     id: "3",
     title: "Facebook",
     iconUrl: facebook,
-    url: "https://instagram.com/syberkonsult",
+    url: "https://www.facebook.com/profile.php?id=61563028414258",
   },
 ];
 
