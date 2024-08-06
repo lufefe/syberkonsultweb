@@ -70,7 +70,7 @@ const CEO = () => {
           name="description"
           content="SyberKonsult | Profile of our Chief Executive Officer"
         />
-        <link rel="canonical" href="/CEO" />
+        <link rel="canonical" href="https://www.syberkonsult.co.za/CEO" />
       </Helmet>
       <motion.div
         initial={{ opacity: 0 }}

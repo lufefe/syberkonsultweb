@@ -17,7 +17,7 @@ const PrivacyPolicy = () => {
           name="description"
           content="SyberKonsult | Please read through our privacy policy"
         />
-        <link rel="canonical" href="/privacypolicy" />
+        <link rel="canonical" href="https://www.syberkonsult.co.za/privacypolicy" />
       </Helmet>
       <Section className="overflow-hidden">
         <motion.div

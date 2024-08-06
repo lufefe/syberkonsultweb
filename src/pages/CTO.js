@@ -68,7 +68,7 @@ const CTO = () => {
      <Helmet>
       <title>SyberKonsult | CTO</title>
       <meta name="description" content="SyberKonsult | Profile of our Chief Technology Officer"/>
-      <link rel="canonical" href="/CTO" />
+      <link rel="canonical" href="https://www.syberkonsult.co.za/CTO" />
     </Helmet>
     <motion.div
       initial={{ opacity: 0 }}
