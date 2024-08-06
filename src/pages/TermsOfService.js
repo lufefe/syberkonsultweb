@@ -17,7 +17,7 @@ const TermsOfService = () => {
           name="description"
           content="SyberKonsult | Please read through our terms of service"
         />
-        <link rel="canonical" href="/termsofservice" />
+        <link rel="canonical" href="https://www.syberkonsult.co.za/termsofservice" />
       </Helmet>
       <Section className="overflow-hidden">
         <motion.div

@@ -37,7 +37,7 @@ const Blog = () => {
     <Helmet>
       <title>SyberBlog</title>
       <meta name="description" content="Your Go-To Source for Cybersecurity Insights"/>
-      <link rel="canonical" href="/blog" />
+      <link rel="canonical" href="https://www.syberkonsult.co.za/blog" />
     </Helmet>
     <motion.div
       initial={{ opacity: 0 }}

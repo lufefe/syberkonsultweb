@@ -38,7 +38,7 @@ const OurStory = () => {
           name="description"
           content="The story behind the SyberKonsult company."
         />
-        <link rel="canonical" href="/ourstory" />
+        <link rel="canonical" href="https://www.syberkonsult.co.za/ourstory" />
       </Helmet>
       <motion.div
         initial={{ opacity: 0 }}

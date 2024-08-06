@@ -15,7 +15,7 @@ const PageNotFound = () => {
           name="description"
           content="Page not found. Click the button to return home."
         />
-        <link rel="canonical" href="/*" />
+        <link rel="canonical" href="https://www.syberkonsult.co.za/*" />
       </Helmet>
       <motion.div
         initial={{ opacity: 0 }}

@@ -15,7 +15,7 @@ const Careers = () => {
        <Helmet>
       <title>SyberKonsult | Careers</title>
       <meta name="description" content="SyberKonsult | Our career opportunities listing"/>
-      <link rel="canonical" href="/careers" />
+      <link rel="canonical" href="https://www.syberkonsult.co.za/careers" />
     </Helmet>
     <motion.section
       initial={{ opacity: 0 }}

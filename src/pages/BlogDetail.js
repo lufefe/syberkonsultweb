@@ -34,7 +34,7 @@ const BlogDetail = () => {
        <Helmet>
       <title>{`SyberBlog | ${singleBlogPost?.fields?.title}`}</title>
       <meta name="description" content={`SyberBlog | ${singleBlogPost?.fields?.title}`}/>
-      <link rel="canonical" href={`/${singleBlogPost?.fields?.slug}`} />
+      <link rel="canonical" href={`https://www.syberkonsult.co.za/blogdetail/${singleBlogPost?.fields?.slug}`} />
     </Helmet>
     <motion.main
       initial={{ opacity: 0 }}

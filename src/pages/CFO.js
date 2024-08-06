@@ -70,7 +70,7 @@ const CFO = () => {
           name="description"
           content="SyberKonsult | Profile of our Chief Financial Officer"
         />
-        <link rel="canonical" href="/CFO" />
+        <link rel="canonical" href="https://www.syberkonsult.co.za/CFO" />
       </Helmet>
       <motion.div
         initial={{ opacity: 0 }}

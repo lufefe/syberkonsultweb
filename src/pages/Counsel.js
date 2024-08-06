@@ -67,7 +67,7 @@ const Counsel = () => {
        <Helmet>
       <title>SyberKonsult | Counsel</title>
       <meta name="description" content="SyberKonsult | Profile of our General Counsel/Legal"/>
-      <link rel="canonical" href="/Counsel" />
+      <link rel="canonical" href="https://www.syberkonsult.co.za/Counsel" />
     </Helmet>
     <motion.div
       initial={{ opacity: 0 }}
