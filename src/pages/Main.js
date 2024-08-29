@@ -20,6 +20,7 @@ const Main = () => {
         <About />
         <ContactUs />
         <FeedBlog />
+        
 
       </motion.div>
     </>
