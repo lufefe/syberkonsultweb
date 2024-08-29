@@ -316,12 +316,9 @@ export const footerlinks = [
     title: "Careers",
     url: "/careers",
   },
-  {
-    id: "3",
-    title: "Blog",
-    url: "/blog",
-  },
 ];
 
+
+
 export const paragraph = 
-"SyberKonsult was founded to fulfill the need of state-of-the-art cybersecurity solutions in response to the rapid emergence of new technologies across industries. We operate as a propriety limited company with a R&D partnership with Invidum Technologies for cybersecurity products. Our team consists of IT Risk specialists and IT Security experts who deliver the best risk management and security implementations, respectively. With our teams' wealth of experience, we safegaurd our core values and withold ourselves to the highest degree of service. Our founding year of 2024 marks an extraordinary posture of the cybersecurity realm. As a newly minted start-up firm, we have focused on building a robust brand to cement the firm's position in the market. Our slogan 'To foster and deliver unparalleled digital transformation and security assurance' is testament to our commitment for new-gen solutions for security."
+"SyberKonsult was founded to fulfil the need for state-of-the-art cybersecurity solutions in response to the rapid emergence of new technologies across industries. We operate as a propriety limited company with an R&D partnership with Invidum Technologies for cybersecurity products. Our team consists of IT Risk specialists and IT Security experts who deliver the best risk management and security implementations, respectively. With our team's wealth of experience, we safeguard our core values and hold ourselves to the highest degree of service. Our founding year of 2024 marks an extraordinary posture of the cybersecurity realm. As a newly minted start-up firm, we have focused on building a robust brand to cement the firm's position in the market. Our slogan 'To foster and deliver unparalleled digital transformation and security assurance' is a testament to our commitment to new-gen solutions for security."
