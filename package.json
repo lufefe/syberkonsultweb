@@ -21,6 +21,7 @@
     "file-saver": "^2.0.5",
     "framer-motion": "^11.2.9",
     "js-file-download": "^0.4.12",
+    "multer-s3": "^2.10.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet-async": "^2.0.5",
@@ -30,7 +31,6 @@
     "react-markdown": "^9.0.1",
     "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
-    "react-snap": "^1.23.0",
     "sass": "^1.77.4",
     "scroll-lock": "^2.1.5",
     "three": "^0.165.0",
@@ -63,7 +63,6 @@
   },
   "devDependencies": {
     "ajv": "^8.16.0",
-    "puppeteer": "^14.3.0",
     "tailwindcss": "^3.4.3"
   }
 }
