@@ -4,6 +4,7 @@ import Services from "../components/Services";
 import About from "../components/About";
 import ContactUs from "../components/ContactUs";
 import FeedBlog from "../components/FeedBlog";
+import ReportHero from "../components/ReportHero";
 
 import { motion } from "framer-motion";
 
@@ -19,9 +20,8 @@ const Main = () => {
         <Services />
         <About />
         <ContactUs />
+        <ReportHero />
         <FeedBlog />
-        
-
       </motion.div>
     </>
   );

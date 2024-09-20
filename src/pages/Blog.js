@@ -24,7 +24,7 @@ const Blog = () => {
           })
           .then((response) => {
             setBlogPosts(response.items);
-            setLoading(false)
+            setLoading(false);
           });
       } catch (error) {
         console.log(`Error fetching authors ${error}`);
@@ -34,86 +34,91 @@ const Blog = () => {
   }, []);
   return (
     <>
-    <Helmet>
-      <title>SyberBlog</title>
-      <meta name="description" content="Your Go-To Source for Cybersecurity Insights"/>
-      <link rel="canonical" href="https://www.syberkonsult.co.za/blog" />
-    </Helmet>
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className="relative p-4"
-    >
-      <div className="relative max-w-screen-xl mx-auto py-20 lg:py-24">
-        <div className="flex">
-          <h2 className="h2 mx-5 font-bold ">Blog Posts</h2>
-        </div>
-        {loading ? <BlogPostsSkeleton />:
-          <div className="mt-2 sm:-mr-8 flex flex-wrap">
-            {blogPosts.map((post) => (
-              <div
-                key={post.sys.id}
-                className={`mt-10 sm:pr-8 w-full ${
-                  post.fields.featured ? "w-full!" : " sm:w-1/2 lg:w-1/3 "
-                }`}
-              >
-                <Link to={`/blogdetail/${post.fields.slug}`}>
-                  <div
-                    className={`group cursor-pointer flex bg-gray-100 rounded-lg ${
-                      post.fields.featured
-                        ? "sm:flex-row! h-full sm:pr-4"
-                        : "flex-col"
-                    }`}
-                  >
+      <Helmet>
+        <title>SyberBlog</title>
+        <meta
+          name="description"
+          content="Your Go-To Source for Cybersecurity Insights"
+        />
+        <link rel="canonical" href="https://www.syberkonsult.co.za/blog" />
+      </Helmet>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="relative p-4"
+      >
+        <div className="relative max-w-screen-xl mx-auto py-20 lg:py-24">
+          <div className="flex">
+            <h2 className="h2 mx-5 font-bold ">Blog Posts</h2>
+          </div>
+          {loading ? (
+            <BlogPostsSkeleton />
+          ) : (
+            <div className="mt-2 sm:-mr-8 flex flex-wrap">
+              {blogPosts.map((post) => (
+                <div
+                  key={post.sys.id}
+                  className={`mt-10 sm:pr-8 w-full ${
+                    post.fields.featured ? "w-full!" : " sm:w-1/2 lg:w-1/3 "
+                  }`}
+                >
+                  <Link to={`/blogdetail/${post.fields.slug}`}>
                     <div
-                      style={{
-                        backgroundImage: `url('${post.fields.coverImage.fields.file.url}')`,
-                      }}
-                      className={`w-full bg-hero bg-no-repeat bg-cover bg-center rounded-t-lg ${
+                      className={`group cursor-pointer flex bg-gray-100 rounded-lg ${
                         post.fields.featured
-                          ? "sm:h-96 sm:min-h-full sm:w-1/2 lg:w-2/3 sm:rounded-t-none sm:rounded-l-lg"
-                          : "h-64"
-                      }`}
-                    ></div>
-                    <div
-                      className={`p-8 border-2 border-t-0 rounded-lg rounded-t-none ${
-                        post.fields.featured
-                          ? "sm:-mr-4 sm:pl-8 sm:flex-1 sm:rounded-none sm:rounded-r-lg sm:border-t-2 sm:border-l-0"
-                          : ""
+                          ? "sm:flex-row! h-full sm:pr-4"
+                          : "flex-col"
                       }`}
                     >
-                      <div className="uppercase text-primary-500 text-xs font-bold text-n-8 tracking-widest leading-loose after:content after:block after:border-b-2 after:border-purple-900 after:w-8">
-                        {post.fields.category}
-                      </div>
-                      <div className="mt-4 uppercase text-gray-600 italic font-semibold text-xs">
-                        {new Intl.DateTimeFormat("en-GB", {
-                          month: "long",
-                          day: "2-digit",
-                          year: "numeric",
-                        }).format(new Date(post.fields.date))}
-                      </div>
-                      <div className="mt-1 font-black text-2xl text-gray-900 group-hover:text-primary-500 transition duration-300">
-                        {post.fields.title}
-                      </div>
-                      {post.fields.featured && post.fields.excerpt && (
-                        <div
-                          className={`text-n-8 ${
-                            post.fields.featured
-                              ? "text-sm mt-3 leading-loose text-gray-600 font-medium"
-                              : ""
-                          }`}
-                        >
-                          {post.fields.excerpt}
+                      <div
+                        style={{
+                          backgroundImage: `url('${post.fields.coverImage.fields.file.url}')`,
+                        }}
+                        className={`w-full bg-hero bg-no-repeat bg-cover bg-center rounded-t-lg ${
+                          post.fields.featured
+                            ? "sm:h-96 sm:min-h-full sm:w-1/2 lg:w-2/3 sm:rounded-t-none sm:rounded-l-lg"
+                            : "h-64"
+                        }`}
+                      ></div>
+                      <div
+                        className={`p-8 border-2 border-t-0 rounded-lg rounded-t-none ${
+                          post.fields.featured
+                            ? "sm:-mr-4 sm:pl-8 sm:flex-1 sm:rounded-none sm:rounded-r-lg sm:border-t-2 sm:border-l-0"
+                            : ""
+                        }`}
+                      >
+                        <div className="uppercase text-primary-500 text-xs font-bold text-n-8 tracking-widest leading-loose after:content after:block after:border-b-2 after:border-purple-900 after:w-8">
+                          {post.fields.category}
                         </div>
-                      )}
+                        <div className="mt-4 uppercase text-gray-600 italic font-semibold text-xs">
+                          {new Intl.DateTimeFormat("en-GB", {
+                            month: "long",
+                            day: "2-digit",
+                            year: "numeric",
+                          }).format(new Date(post.fields.date))}
+                        </div>
+                        <div className="mt-1 font-black text-2xl text-gray-900 group-hover:text-primary-500 transition duration-300">
+                          {post.fields.title}
+                        </div>
+                        {post.fields.featured && post.fields.excerpt && (
+                          <div
+                            className={`text-n-8 ${
+                              post.fields.featured
+                                ? "text-sm mt-3 leading-loose text-gray-600 font-medium"
+                                : ""
+                            }`}
+                          >
+                            {post.fields.excerpt}
+                          </div>
+                        )}
+                      </div>
                     </div>
-                  </div>
-                </Link>
-              </div>
-            ))}
-          </div>
-}
+                  </Link>
+                </div>
+              ))}
+            </div>
+          )}
           {visible < blogPosts.length && (
             <div className="flex justify-center py-8">
               <button
@@ -124,10 +129,10 @@ const Blog = () => {
               </button>
             </div>
           )}
-      </div>
+        </div>
 
-      {/* //todo - implement newsletter */}
-      {/* <div id="newsletter-banner" tabindex="-1" className="fixed bottom-0 start-0 z-50 flex justify-between w-full p-4 border-b border-gray-200 bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
+        {/* //todo - implement newsletter */}
+        {/* <div id="newsletter-banner" tabindex="-1" className="fixed bottom-0 start-0 z-50 flex justify-between w-full p-4 border-b border-gray-200 bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
     <div className="flex items-center flex-shrink-0 w-full mx-auto sm:w-auto">
         <form className="flex flex-col items-center w-full md:flex-row">
             <label for="email" className="flex-shrink-0 mb-2 me-auto text-sm font-medium text-gray-500 md:mb-0 md:me-4 dark:text-gray-400 md:m-0">Sign up for our newsletter</label>
@@ -144,7 +149,7 @@ const Blog = () => {
         </button>
     </div>
 </div> */}
-    </motion.div>
+      </motion.div>
     </>
   );
 };
@@ -179,4 +184,4 @@ function BlogPostsSkeleton() {
       <span className="sr-only">Loading...</span>
     </div>
   );
-};
+}

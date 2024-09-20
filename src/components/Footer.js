@@ -64,11 +64,20 @@ const Footer = () => {
 
             <div class="flex flex-col items-start mt-4">
               <a
-                href="/blog"
+                href="https://www.canva.com/design/DAGOaVQDpRk/UGIJy9dd_S03plKsEjLLFg/view?utm_content=DAGOaVQDpRk&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                target="_blank"
+                class=" text-n-4 transition-colors hover:text-n-1"
+                rel="noreferrer"
+              >
+                2024 Cybersecurity Report
+              </a>
+              <Link
+                to="/blog"
                 class=" text-n-4 transition-colors hover:text-n-1"
               >
-                Blog
-              </a>
+                SyberBlog
+              </Link>
+
               <a
                 href="https://www.cybersecurityhub.gov.za"
                 target="_blank"
@@ -95,6 +104,8 @@ const Footer = () => {
           <a href="/">
             <img class="w-auto h-16" src={skLogoOnly} alt="SyberKonsult logo" />
           </a>
+
+          {/* <p>SyberKonsult is a B-BBEE LEVEL 1 CONTRIBUTOR</p> */}
 
           <div class="flex -mx-2">
             {/* SOCIAL MEDIA ICONS */}
