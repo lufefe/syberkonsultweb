@@ -22,9 +22,10 @@ const ReportHero = () => {
             Our 2024 Cybersecurity Report is available!
           </h3>
           <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
-            We hope this report serves as a valuable resource for your organization, helping
-            you to understand the ever-changing cybersecurity landscape and to
-            implement effective measures to protect your assets.
+            We hope this report serves as a valuable resource for your
+            organization, helping you to understand the ever-changing
+            cybersecurity landscape and to implement effective measures to
+            protect your assets.
           </p>
           <button
             className="bg-indigo-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95"
@@ -56,12 +57,18 @@ const ReportHero = () => {
                   className="mt-2 text-white bg-violet-700 hover:bg-violet-800 focus:ring-4 focus:outline-none focus:ring-violet-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-violet-600 dark:hover:bg-violet-700 dark:focus:ring-violet-800"
                 >
                   Open in a new tab
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 pl-1">
-  <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z" clip-rule="evenodd" />
-</svg>
-
-
-
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="size-5 pl-1"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
                 </button>
               </a>
             </div>
@@ -180,6 +187,7 @@ const ShuffleGrid = () => {
     shuffleSquares();
 
     return () => clearTimeout(timeoutRef.current);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const shuffleSquares = () => {
