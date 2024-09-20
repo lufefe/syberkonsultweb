@@ -6,9 +6,24 @@ import PrivacyPolicy from "./PrivacyPolicy";
 import TermsOfService from "./TermsOfService";
 import Main from "./Main";
 import CEO from "./CEO";
-import CFO from "./CFO"
-import CTO from "./CTO"
-import Counsel from "./Counsel"
-import BlogDetail from "./BlogDetail"
+import CFO from "./CFO";
+import CTO from "./CTO";
+import Counsel from "./Counsel";
+import BlogDetail from "./BlogDetail";
+import ReportDownload from "./ReportDownload";
 
-export {Main, Blog, OurStory, Careers, PageNotFound, PrivacyPolicy, TermsOfService, CEO, CFO, CTO, Counsel, BlogDetail}
+export {
+  Main,
+  Blog,
+  OurStory,
+  Careers,
+  PageNotFound,
+  PrivacyPolicy,
+  TermsOfService,
+  CEO,
+  CFO,
+  CTO,
+  Counsel,
+  BlogDetail,
+  ReportDownload,
+};
