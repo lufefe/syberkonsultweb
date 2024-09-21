@@ -21,7 +21,7 @@ const ReportHero = () => {
           <h3 className="text-4xl md:text-6xl font-bold">
             Our 2024 Cybersecurity Report is available!
           </h3>
-          <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
+          <p className="text-base md:text-lg text-slate-500 my-4 md:my-6">
             We hope this report serves as a valuable resource for your
             organization, helping you to understand the ever-changing
             cybersecurity landscape and to implement effective measures to

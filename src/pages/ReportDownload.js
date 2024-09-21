@@ -72,11 +72,11 @@ const ReportDownload = () => {
           exit={{ opacity: 0 }}
           className="flex flex-col justify-center items-center relative"
         >
-          <p class="text-3xl font-bold text-zinc-950 dark:text-white text-center">
+          <p class="text-3xl font-bold dark:text-white text-center">
             Download our{" "}
             <span className="text-indigo-500">2024 Cybersecurity Report</span>
           </p>
-          <p class="mb-2.5 mt-2.5 font-grotesk text-zinc-950 dark:text-zinc-400 text-center">
+          <p class="mb-2.5 mt-2.5 font-grotesk dark:text-zinc-400 text-center">
             Enter your name and email to download
           </p>
 
@@ -159,7 +159,7 @@ const ReportDownload = () => {
                 </div>
                 <label
                   for="terms"
-                  class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  class="ms-2 text-sm font-medium dark:text-gray-300"
                 >
                   I agree with the{" "}
                   <a href="/termsofservice" class="underline">

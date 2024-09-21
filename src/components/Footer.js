@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
           <div className="flex flex-col items-center text-center sm:col-span-2">
             {/* Form */}
-            <h3 class="max-w-lg text-lg font-semibold tracking-tight text-gray-800 xl:text-xl dark:text-white">
+            <h3 class="max-w-lg text-lg font-semibold tracking-tight xl:text-xl dark:text-white">
               Subscribe to our newsletter to get cyber updates.
             </h3>
             <p className="caption text-n-4 lg:block">
